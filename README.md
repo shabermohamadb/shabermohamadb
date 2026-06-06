@@ -1,5 +1,14 @@
 <div align="center">
 
+<!-- ANIMATED BANNER -->
+<div align="center">
+  <img src="https://shabeer-portfolio-phi.vercel.app/shabeer-photo.jpg" alt="Nav" width="200" style="border-radius: 15px; border: 2px solid #30363d; box-shadow: 0px 5px 15px rgba(0,0,0,0.3);">
+</div>
+
+
+
+<div align="center">
+
 <img src="https://capsule-render.vercel.app/api?type=venom&color=0:0a0a0f,30:0d1b2a,60:1b2838,100:0a0a0f&height=220&section=header&text=SHABER%20MOHAMAD%20B&fontSize=58&fontColor=00ff88&fontAlignY=40&desc=%E2%96%BA%20%20SELECT%20YOUR%20DEVELOPER%20%20%E2%97%84&descSize=18&descAlignY=65&descColor=66ffbb&animation=scaleIn&stroke=00ff88&strokeWidth=2" />
 
 </div>
