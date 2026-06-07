@@ -2,11 +2,9 @@
 
 <img src="https://shabeer-portfolio-phi.vercel.app/shabeer-photo.jpg" width="170" alt="Shaber Mohamad B" />
 
-<br/>
+<br/><br/>
 
-<img src="https://capsule-render.vercel.app/api?type=venom&height=230&color=0:020202,45:003b24,100:020202&text=SHABER%20MOHAMAD%20B&fontSize=45&fontColor=ffffff&animation=twinkling&stroke=00ff88&strokeWidth=2&desc=GAME%20DEVELOPER%20%7C%20UNITY%20CREATOR%20%7C%20AI%20%26%20DATA%20SCIENCE&descSize=15&descColor=00ff88&descAlignY=68"/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=18&duration=2200&pause=600&color=00FF88&center=true&vCenter=true&width=600&lines=🎮+Game+Developer;⚔️+Unity+%2B+C%23+Creator;🤖+Discord+Bot+Developer;🧠+AI+%26+Data+Science+Student;🔌+IoT+Project+Builder;🚀+Ready+To+Deploy"/>
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=22&duration=2200&pause=600&color=00FF88&center=true&vCenter=true&width=650&lines=SHABER+MOHAMAD+B;GAME+DEVELOPER;UNITY+CREATOR;AI+%26+DATA+SCIENCE;DISCORD+BOT+DEVELOPER;IoT+PROJECT+BUILDER" />
 
 </div>
 
@@ -29,9 +27,9 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=13&duration=1600&pause=350&color=00FF88&center=true&vCenter=true&width=650&lines=LOADING+GAME...;SPAWNING+PLAYER...;COLLECTING+XP...;DEBUGGING+ENEMIES...;MISSION+COMPLETE!" />
 
-<br/>
+<br/><br/>
 
-<img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="360"/>
+<img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="360" />
 
 </div>
 
@@ -114,27 +112,24 @@
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=shabermohamadb&show_icons=true&theme=merko&hide_border=true&bg_color=050505&title_color=00ff88&icon_color=00ff88&text_color=ffffff"/>
+<img src="https://github-readme-streak-stats-eight.vercel.app?user=shabermohamadb&theme=merko&hide_border=true&background=050505&ring=00ff88&fire=00ff88&currStreakLabel=00ff88" width="95%" />
 
 <br/><br/>
 
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shabermohamadb&layout=compact&theme=merko&hide_border=true&bg_color=050505&title_color=00ff88&text_color=ffffff"/>
-
-<br/><br/>
-
-<img src="https://streak-stats.demolab.com?user=shabermohamadb&theme=merko&hide_border=true&background=050505&ring=00ff88&fire=00ff88&currStreakLabel=00ff88"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=shabermohamadb&theme=react-dark&hide_border=true&area=true&bg_color=050505&color=00ff88&line=00ff88&point=ffffff" width="95%" />
 
 </div>
 
 ---
 
-## 🏆 Trophy Room
+## 🏆 Achievement Zone
 
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=shabermohamadb&theme=matrix&no-frame=true&no-bg=true&margin-w=8&row=2&column=3"/>
-
-</div>
+- 🎮 Unity Game Developer
+- 🤖 Discord Bot Creator
+- 🔌 IoT Project Builder
+- 🌐 Web Developer
+- 🧠 AI & Data Science Student
+- 🚀 Always Building Projects
 
 ---
 
@@ -158,10 +153,6 @@
 
 ### 🎮 Game Over is not the end. It is just another checkpoint.
 
-<img src="https://komarev.com/ghpvc/?username=shabermohamadb&style=for-the-badge&color=00ff88&label=PLAYERS+VISITED"/>
-
-<br/><br/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0:020202,50:00ff88,100:020202&text=GAME%20ON.%20BUILD%20ON.&fontSize=24&fontColor=ffffff&animation=fadeIn"/>
+<img src="https://komarev.com/ghpvc/?username=shabermohamadb&style=for-the-badge&color=00ff88&label=PLAYERS+VISITED" />
 
 </div>
