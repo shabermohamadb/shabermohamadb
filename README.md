@@ -89,8 +89,8 @@ I study **Artificial Intelligence & Data Science** at **Stella Mary's College of
   [ ACTIVE QUESTS ]
   ├── 🗡️  Main Quest   → Graduate with distinction in AI & Data Science
   ├── 🔮  Side Quest   → Ship a Unity game to production
-  ├── ⚡  Side Quest   → Expand GROUNDZERO community x10
-  └── 🎬  Side Quest   → Release "Viva 404" short film
+  ├── ⚡  Side Quest   → DISCORD BOT FOR GROUNDZERO community x10
+  └── 🎬  Side Quest   → PROFESSIONAL WEBSITE 
 ```
 
 ---
