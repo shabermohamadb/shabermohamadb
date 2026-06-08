@@ -6,6 +6,10 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=22&duration=2200&pause=600&color=00FF88&center=true&vCenter=true&width=650&lines=SHABER+MOHAMAD+B;GAME+DEVELOPER;UNITY+CREATOR;AI+%26+DATA+SCIENCE;DISCORD+BOT+DEVELOPER;IoT+PROJECT+BUILDER" />
 
+<br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=12&duration=1400&pause=300&color=00FF88&center=true&vCenter=true&width=650&lines=%5BSYSTEM%5D+BOOTING+DEV+ENGINE...;%5BUNITY%5D+LOADING+SCENE...;%5BC%23%5D+COMPILING+SCRIPTS...;%5BAI%5D+TRAINING+MODEL...;%5BBOT%5D+CONNECTING+TO+DISCORD...;%5BSTATUS%5D+READY+TO+BUILD" />
+
 </div>
 
 ---
@@ -31,12 +35,21 @@
 
 <img src="https://media.giphy.com/media/26AHONQ79FdWZhAI0/giphy.gif" width="360" />
 
+<br/><br/>
+
+<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=20&duration=1200&pause=250&color=00FF88&center=true&vCenter=true&width=650&lines=HP+%5B%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%5D+100%25;XP+%5B%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%91%E2%96%91%E2%96%91%5D+75%25;MISSION+%5B%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%88%E2%96%91%E2%96%91%5D+85%25;STATUS+PLAYING..." />
+
 </div>
 
-**HP:** ████████████████████ 100%  
-**XP:** ███████████████░░░░░ 75%  
-**Mission:** █████████████████░░░ 85%  
-**Status:** Playing...
+---
+
+## 🧠 Game Developer Console
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=17&duration=1700&pause=500&color=00FF88&center=false&vCenter=true&width=650&lines=%3E+create_player%28%22Shaber%22%29;%3E+load_engine%28%22Unity%22%29;%3E+attach_script%28%22CSharp%22%29;%3E+spawn_project%28%22Discord+Bot%22%29;%3E+deploy_status%28%22ONLINE%22%29;" />
+
+</div>
 
 ---
 
@@ -108,6 +121,16 @@
 
 ---
 
+## 🐍 Contribution Game
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" width="95%" />
+
+</div>
+
+---
+
 ## 📊 Battle Stats
 
 <div align="center">
@@ -123,6 +146,12 @@
 ---
 
 ## 🏆 Achievement Zone
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=13&duration=1800&pause=450&color=FFD700&center=true&vCenter=true&width=650&lines=ACHIEVEMENT+UNLOCKED+%3A+UNITY+DEV;ACHIEVEMENT+UNLOCKED+%3A+BOT+CREATOR;ACHIEVEMENT+UNLOCKED+%3A+IoT+BUILDER;ACHIEVEMENT+UNLOCKED+%3A+WEB+DEVELOPER" />
+
+</div>
 
 - 🎮 Unity Game Developer
 - 🤖 Discord Bot Creator
@@ -151,7 +180,9 @@
 
 <div align="center">
 
-### 🎮 Game Over is not the end. It is just another checkpoint.
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=18&duration=2200&pause=600&color=00FF88&center=true&vCenter=true&width=650&lines=GAME+OVER+IS+NOT+THE+END;IT+IS+JUST+ANOTHER+CHECKPOINT;RESPAWN+%E2%80%A2+REBUILD+%E2%80%A2+REDEPLOY" />
+
+<br/><br/>
 
 <img src="https://komarev.com/ghpvc/?username=shabermohamadb&style=for-the-badge&color=00ff88&label=PLAYERS+VISITED" />
 
