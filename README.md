@@ -5,8 +5,8 @@
 
 <br/>
 
-<!-- AVATAR -->
-<img src="https://shabeer-portfolio-phi.vercel.app/shabeer-photo.jpg" width="160" style="border-radius:50%;border:3px solid #00FF88;" />
+<!-- AVATAR — GitHub strips inline styles, so we use a rounded border via shields or just plain img -->
+<img src="https://shabeer-portfolio-phi.vercel.app/shabeer-photo.jpg" width="160" />
 
 <br/><br/>
 
