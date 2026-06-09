@@ -105,7 +105,7 @@
 ║  🏡 IoT Home Automation       Hardware           ✅ Completed            ║
 ║  🎯 Laser Shooter Game        Arduino/LDR        ✅ Completed            ║
 ║  🌐 Portfolio Website         Web Development    🚀 Deployed             ║
-║  🎬 VIVA 404 Short Film       Creative / Film    🎥 In Production        ║
+║  
 ╚══════════════════════════════════════════════════════════════════════════╝
 ```
 
