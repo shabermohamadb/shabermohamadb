@@ -1,24 +1,9 @@
-<div align="center">
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=00ff88&height=120&section=header&text=SHABER%20MOHAMAD%20B&fontSize=32&fontColor=050505&animation=fadeIn&fontAlignY=35" /><img src="https://shabeer-portfolio-phi.vercel.app/shabeer-photo.jpg" width="180" alt="Shaber Mohamad B" /><br/><br/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=00ff88&height=120&section=header&text=SHABER%20MOHAMAD%20B&fontSize=32&fontColor=050505&animation=fadeIn&fontAlignY=35" />
+<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=24&duration=2000&pause=500&color=00FF88&center=true&vCenter=true&width=750&lines=GAME+DEVELOPER;UNITY+%2B+C%23+CREATOR;AI+%26+DATA+SCIENCE+STUDENT;DISCORD+BOT+DEVELOPER;IoT+PROJECT+BUILDER;ALWAYS+BUILDING+PROJECTS" /><br/><img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=12&duration=1300&pause=250&color=FFD700&center=true&vCenter=true&width=750&lines=%5BSYSTEM%5D+BOOTING...;%5BUNITY%5D+LOADING+SCENE...;%5BC%23%5D+COMPILING...;%5BBOT%5D+ONLINE...;%5BSTATUS%5D+MISSION+READY" /></div>---
 
-<img src="https://shabeer-portfolio-phi.vercel.app/shabeer-photo.jpg" width="180" style="border-radius:50%;" alt="Shaber Mohamad B" />
+🎮 PLAYER PROFILE
 
-<br/><br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=24&duration=2000&pause=500&color=00FF88&center=true&vCenter=true&width=750&lines=GAME+DEVELOPER;UNITY+%2B+C%23+CREATOR;AI+%26+DATA+SCIENCE+STUDENT;DISCORD+BOT+DEVELOPER;IoT+PROJECT+BUILDER;ALWAYS+BUILDING+PROJECTS" />
-
-<br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=12&duration=1300&pause=250&color=FFD700&center=true&vCenter=true&width=750&lines=%5BSYSTEM%5D+BOOTING...;%5BUNITY%5D+LOADING+SCENE...;%5BC%23%5D+COMPILING...;%5BBOT%5D+ONLINE...;%5BSTATUS%5D+MISSION+READY" />
-
-</div>
-
----
-
-## 🎮 PLAYER PROFILE
-
-```yaml
 Name: Shaber Mohamad B
 Role: Game Developer
 College: Stella Mary's College of Engineering
@@ -121,4 +106,3 @@ Mission| Type| Status
 </div>---
 
 <div align="center"><img src="https://capsule-render.vercel.app/api?type=waving&color=00ff88&height=110&section=footer&text=RESPAWN%20%E2%80%A2%20REBUILD%20%E2%80%A2%20REDEPLOY&fontSize=22&fontColor=050505&animation=twinkling" /><br/><img src="https://komarev.com/ghpvc/?username=shabermohamadb&style=for-the-badge&color=00ff88&label=PLAYERS+VISITED" /></div>
-```
