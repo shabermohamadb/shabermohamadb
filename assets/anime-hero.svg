@@ -1,0 +1,287 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Night Gradients -->
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#070913" />
+      <stop offset="45%" stop-color="#0F1426" />
+      <stop offset="75%" stop-color="#181B34" />
+      <stop offset="100%" stop-color="#0A0C16" />
+    </linearGradient>
+
+    <linearGradient id="buildingGlow1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E2340" />
+      <stop offset="100%" stop-color="#0D1021" />
+    </linearGradient>
+
+    <linearGradient id="buildingGlow2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#282E52" />
+      <stop offset="100%" stop-color="#121528" />
+    </linearGradient>
+
+    <linearGradient id="screenCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7DCFFF" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.3" />
+    </linearGradient>
+
+    <linearGradient id="screenPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BB9AF7" />
+      <stop offset="100%" stop-color="#7AA2F7" stop-opacity="0.3" />
+    </linearGradient>
+
+    <linearGradient id="textTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F1F5F9" />
+      <stop offset="100%" stop-color="#7DCFFF" />
+    </linearGradient>
+
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E0AF68" />
+      <stop offset="100%" stop-color="#FF9E64" />
+    </linearGradient>
+
+    <style>
+      .kanji {
+        font-family: 'Hiragino Mincho ProN', 'MS Mincho', 'Yu Mincho', serif;
+        font-size: 11px;
+        fill: #7AA2F7;
+        letter-spacing: 4px;
+        opacity: 0.85;
+      }
+      .title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        font-size: 44px;
+        font-weight: 900;
+        fill: url(#textTitleGrad);
+        letter-spacing: 2px;
+      }
+      .subtitle {
+        font-family: ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, monospace;
+        font-size: 13px;
+        font-weight: 600;
+        fill: #BB9AF7;
+        letter-spacing: 2.5px;
+      }
+      .quote {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 13px;
+        font-style: italic;
+        fill: #9AA5CE;
+        letter-spacing: 0.5px;
+      }
+      .meta {
+        font-family: ui-monospace, monospace;
+        font-size: 10px;
+        fill: #565F89;
+        letter-spacing: 1.5px;
+      }
+
+      /* Rain animation */
+      @keyframes rainFall {
+        0% { transform: translateY(-120px) translateX(0); opacity: 0; }
+        50% { opacity: 0.7; }
+        100% { transform: translateY(350px) translateX(-40px); opacity: 0; }
+      }
+
+      /* Monitor Screen Flicker */
+      @keyframes monitorGlow {
+        0%, 100% { opacity: 0.22; }
+        45% { opacity: 0.28; }
+        50% { opacity: 0.19; }
+        70% { opacity: 0.26; }
+      }
+
+      /* Radio beacon blinking */
+      @keyframes beaconBlink {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 1; }
+      }
+
+      /* Floating dust motes */
+      @keyframes moteDrift {
+        0%, 100% { transform: translateY(0) translateX(0); opacity: 0.3; }
+        50% { transform: translateY(-15px) translateX(10px); opacity: 0.8; }
+      }
+
+      .rain-streak-1 { animation: rainFall 1.8s linear infinite; }
+      .rain-streak-2 { animation: rainFall 2.2s linear infinite 0.4s; }
+      .rain-streak-3 { animation: rainFall 1.5s linear infinite 0.9s; }
+      .rain-streak-4 { animation: rainFall 2.0s linear infinite 1.2s; }
+      
+      .screen-ambient { animation: monitorGlow 4s ease-in-out infinite; }
+      .beacon { animation: beaconBlink 2s ease-in-out infinite; }
+      .mote { animation: moteDrift 5s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect width="900" height="420" rx="14" fill="url(#nightSky)" />
+
+  <!-- ========================================== -->
+  <!-- BACKGROUND: RAINY CITY SKYLINE SCENE      -->
+  <!-- ========================================== -->
+  <g opacity="0.85">
+    <!-- Distant Haze & Aurora Horizon -->
+    <ellipse cx="450" cy="270" rx="420" ry="80" fill="#7AA2F7" opacity="0.08" filter="blur(50px)" />
+    <ellipse cx="650" cy="260" rx="200" ry="60" fill="#BB9AF7" opacity="0.1" filter="blur(40px)" />
+    <ellipse cx="250" cy="280" rx="180" ry="50" fill="#7DCFFF" opacity="0.08" filter="blur(40px)" />
+
+    <!-- Distant Silhouette Buildings -->
+    <rect x="40" y="160" width="45" height="150" fill="#0E1222" />
+    <rect x="95" y="130" width="60" height="180" fill="#0C101F" />
+    <rect x="165" y="180" width="50" height="130" fill="#101428" />
+    <rect x="225" y="110" width="70" height="200" fill="url(#buildingGlow1)" />
+    <rect x="305" y="145" width="55" height="165" fill="#0F1326" />
+    <rect x="370" y="170" width="80" height="140" fill="#0D1022" />
+    <rect x="460" y="125" width="65" height="185" fill="url(#buildingGlow2)" />
+    <rect x="535" y="150" width="50" height="160" fill="#0E1224" />
+    <rect x="595" y="95" width="85" height="215" fill="url(#buildingGlow1)" />
+    <rect x="690" y="140" width="60" height="170" fill="#101428" />
+    <rect x="760" y="120" width="95" height="190" fill="url(#buildingGlow2)" />
+
+    <!-- Antennas & Tower Beacons -->
+    <line x1="260" y1="70" x2="260" y2="110" stroke="#38436B" stroke-width="1.5" />
+    <circle class="beacon" cx="260" cy="68" r="2.5" fill="#F7768E" />
+
+    <line x1="638" y1="50" x2="638" y2="95" stroke="#38436B" stroke-width="1.5" />
+    <circle class="beacon" cx="638" cy="48" r="3" fill="#F7768E" />
+
+    <line x1="808" y1="80" x2="808" y2="120" stroke="#38436B" stroke-width="1.5" />
+    <circle class="beacon" cx="808" cy="78" r="2" fill="#7DCFFF" />
+
+    <!-- Skyscraper Windows (Tiny twinkling grid lights) -->
+    <!-- Building at 225 -->
+    <rect x="235" y="125" width="6" height="4" fill="#E0AF68" opacity="0.6" />
+    <rect x="247" y="125" width="6" height="4" fill="#7DCFFF" opacity="0.5" />
+    <rect x="260" y="140" width="6" height="4" fill="#E0AF68" opacity="0.7" />
+    <rect x="272" y="155" width="6" height="4" fill="#E0AF68" opacity="0.4" />
+    <rect x="235" y="170" width="6" height="4" fill="#7DCFFF" opacity="0.6" />
+    <rect x="247" y="185" width="6" height="4" fill="#E0AF68" opacity="0.5" />
+
+    <!-- Building at 460 -->
+    <rect x="472" y="140" width="6" height="4" fill="#BB9AF7" opacity="0.6" />
+    <rect x="488" y="155" width="6" height="4" fill="#7DCFFF" opacity="0.7" />
+    <rect x="502" y="170" width="6" height="4" fill="#E0AF68" opacity="0.5" />
+    <rect x="472" y="185" width="6" height="4" fill="#7DCFFF" opacity="0.4" />
+
+    <!-- Building at 595 -->
+    <rect x="610" y="110" width="6" height="4" fill="#E0AF68" opacity="0.7" />
+    <rect x="625" y="125" width="6" height="4" fill="#7DCFFF" opacity="0.6" />
+    <rect x="642" y="125" width="6" height="4" fill="#BB9AF7" opacity="0.5" />
+    <rect x="658" y="140" width="6" height="4" fill="#E0AF68" opacity="0.8" />
+    <rect x="610" y="160" width="6" height="4" fill="#7DCFFF" opacity="0.4" />
+    <rect x="635" y="175" width="6" height="4" fill="#E0AF68" opacity="0.6" />
+
+    <!-- Window Glass Frame Mullions -->
+    <line x1="300" y1="20" x2="300" y2="300" stroke="#141829" stroke-width="3" opacity="0.7" />
+    <line x1="600" y1="20" x2="600" y2="300" stroke="#141829" stroke-width="3" opacity="0.7" />
+    <line x1="20" y1="200" x2="880" y2="200" stroke="#141829" stroke-width="2" opacity="0.5" />
+
+    <!-- Diagonal Animated Rain Streaks -->
+    <g stroke="#7DCFFF" stroke-width="1.2" opacity="0.4" stroke-linecap="round">
+      <line class="rain-streak-1" x1="120" y1="30" x2="105" y2="65" />
+      <line class="rain-streak-2" x1="240" y1="20" x2="225" y2="60" />
+      <line class="rain-streak-3" x1="380" y1="40" x2="365" y2="75" />
+      <line class="rain-streak-4" x1="520" y1="10" x2="505" y2="50" />
+      <line class="rain-streak-1" x1="670" y1="35" x2="655" y2="70" />
+      <line class="rain-streak-2" x1="790" y1="15" x2="775" y2="55" />
+      <line class="rain-streak-3" x1="180" y1="80" x2="165" y2="120" />
+      <line class="rain-streak-4" x1="430" y1="90" x2="415" y2="130" />
+      <line class="rain-streak-2" x1="720" y1="70" x2="705" y2="110" />
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- FOREGROUND: DEVELOPER BATTLESTATION        -->
+  <!-- ========================================== -->
+  <!-- Ambient Screen Glow onto Workspace -->
+  <ellipse class="screen-ambient" cx="450" cy="310" rx="360" ry="100" fill="#7DCFFF" filter="blur(60px)" />
+  <ellipse class="screen-ambient" cx="540" cy="290" rx="220" ry="80" fill="#BB9AF7" filter="blur(50px)" />
+
+  <!-- Desk Surface -->
+  <polygon points="40,400 860,400 900,420 0,420" fill="#0B0D18" stroke="#1E2338" stroke-width="1" />
+
+  <!-- Dual Monitor Setup (Right & Center) -->
+  <!-- Secondary Vertical Monitor (Left/Mid) -->
+  <rect x="290" y="245" width="70" height="120" rx="4" fill="#0C0F1D" stroke="#252C48" stroke-width="1.5" />
+  <rect x="295" y="250" width="60" height="110" rx="2" fill="url(#screenPurple)" opacity="0.35" />
+  <!-- Code lines on vertical screen -->
+  <line x1="302" y1="262" x2="330" y2="262" stroke="#BB9AF7" stroke-width="1.5" />
+  <line x1="302" y1="272" x2="345" y2="272" stroke="#7DCFFF" stroke-width="1.5" />
+  <line x1="310" y1="282" x2="340" y2="282" stroke="#9AA5CE" stroke-width="1" />
+  <line x1="310" y1="292" x2="335" y2="292" stroke="#7AA2F7" stroke-width="1" />
+  <line x1="302" y1="304" x2="348" y2="304" stroke="#BB9AF7" stroke-width="1.5" />
+  <line x1="302" y1="314" x2="325" y2="314" stroke="#7DCFFF" stroke-width="1.5" />
+
+  <!-- Primary Ultrawide Monitor (Center/Right) -->
+  <rect x="375" y="230" width="220" height="135" rx="5" fill="#0C0F1D" stroke="#252C48" stroke-width="1.5" />
+  <rect x="382" y="237" width="206" height="121" rx="3" fill="url(#screenCyan)" opacity="0.4" />
+  <!-- Code syntax tree on primary screen -->
+  <line x1="395" y1="252" x2="445" y2="252" stroke="#7DCFFF" stroke-width="2" />
+  <line x1="395" y1="264" x2="475" y2="264" stroke="#E0AF68" stroke-width="1.5" />
+  <line x1="410" y1="276" x2="520" y2="276" stroke="#BB9AF7" stroke-width="1.5" />
+  <line x1="410" y1="288" x2="495" y2="288" stroke="#7AA2F7" stroke-width="1.5" />
+  <line x1="425" y1="300" x2="550" y2="300" stroke="#9ECE6A" stroke-width="1.5" />
+  <line x1="410" y1="312" x2="480" y2="312" stroke="#7DCFFF" stroke-width="1.5" />
+  <line x1="395" y1="324" x2="435" y2="324" stroke="#F7768E" stroke-width="2" />
+  <line x1="395" y1="338" x2="560" y2="338" stroke="#7DCFFF" stroke-width="1" stroke-dasharray="3 3" />
+
+  <!-- Monitor Stands -->
+  <rect x="320" y="365" width="10" height="20" fill="#171C30" />
+  <rect x="478" y="365" width="14" height="20" fill="#171C30" />
+
+  <!-- Developer Silhouette with Headphones (Left of screens, facing monitors) -->
+  <g fill="#090B15" stroke="#1B2138" stroke-width="1">
+    <!-- Back / Shoulders Silhouette -->
+    <path d="M 210 420 Q 230 340 270 330 Q 300 330 320 420 Z" />
+    <!-- Neck -->
+    <rect x="255" y="305" width="25" height="30" rx="3" />
+    <!-- Head Profile (Tilted toward screen) -->
+    <path d="M 245 270 Q 255 240 280 245 Q 300 250 295 285 Q 290 310 265 310 Q 245 305 245 270 Z" />
+    <!-- Anime Hair Silhouette -->
+    <path d="M 240 265 Q 245 235 275 235 Q 290 235 300 245 Q 312 255 305 270 Q 295 255 280 255 Q 260 255 250 275 Z" />
+    <!-- Headphone Band & Ear Cup -->
+    <ellipse cx="270" cy="275" rx="7" ry="12" fill="#7DCFFF" stroke="#252C48" opacity="0.8" />
+    <path d="M 258 270 Q 265 240 278 245" fill="none" stroke="#7DCFFF" stroke-width="2.5" />
+  </g>
+
+  <!-- Mechanical Keyboard Glow & Mug -->
+  <rect x="390" y="390" width="130" height="16" rx="2" fill="#12172A" stroke="#2D3556" stroke-width="1" />
+  <!-- Underglow strip -->
+  <line x1="394" y1="404" x2="516" y2="404" stroke="#7DCFFF" stroke-width="1.5" opacity="0.8" />
+
+  <!-- Lo-Fi Steaming Mug -->
+  <rect x="545" y="385" width="16" height="20" rx="2" fill="#1A1F36" stroke="#2D3556" stroke-width="1" />
+  <path d="M 561 390 Q 567 395 561 400" fill="none" stroke="#2D3556" stroke-width="1.5" />
+  <!-- Steam wisp -->
+  <path d="M 550 380 Q 553 372 549 365" fill="none" stroke="#9AA5CE" stroke-width="1" opacity="0.4" />
+
+  <!-- Floating Digital Dust / Firefly Particles -->
+  <circle class="mote" cx="180" cy="190" r="1.5" fill="#7DCFFF" />
+  <circle class="mote" cx="340" cy="140" r="1" fill="#E0AF68" />
+  <circle class="mote" cx="510" cy="180" r="2" fill="#BB9AF7" />
+  <circle class="mote" cx="680" cy="130" r="1.5" fill="#7DCFFF" />
+  <circle class="mote" cx="740" cy="220" r="1" fill="#E0AF68" />
+
+  <!-- ========================================== -->
+  <!-- CINEMATIC TYPOGRAPHY OVERLAY               -->
+  <!-- ========================================== -->
+  <!-- Top Kanji & Translucent Mission Pill -->
+  <g transform="translate(48, 42)">
+    <text x="0" y="0" class="kanji">開発者 // フルスタック • 人工知能</text>
+  </g>
+
+  <!-- Top Right Status Coordinate -->
+  <g transform="translate(852, 42)">
+    <text x="0" y="0" text-anchor="end" class="meta">13.0827° N, 80.2707° E &#8226; TAMIL NADU, INDIA</text>
+  </g>
+
+  <!-- Center-Left Cinematic Headline -->
+  <g transform="translate(48, 105)">
+    <text x="0" y="0" class="title">SHABER MOHAMAD B</text>
+    <text x="0" y="28" class="subtitle">FULL-STACK DEVELOPER &#8226; AI &amp; DATA SCIENCE</text>
+    <text x="0" y="56" class="quote">“Turning ideas into experiences through code.”</text>
+  </g>
+
+  <!-- Architectural Outer Border -->
+  <rect x="1" y="1" width="898" height="418" rx="13" fill="none" stroke="#1D243B" stroke-width="1.5" />
+</svg>
