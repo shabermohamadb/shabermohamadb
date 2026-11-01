@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 150" width="100%" height="100%">
+  <defs>
+    <linearGradient id="conBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E121B" />
+      <stop offset="100%" stop-color="#080A0E" />
+    </linearGradient>
+    <style>
+      .mono { font-family: ui-monospace, 'JetBrains Mono', monospace; }
+      .sans { font-family: system-ui, -apple-system, 'SF Pro Display', Inter, sans-serif; }
+      .card { fill: #121622; stroke: #202738; stroke-width: 1; rx: 6; }
+      .card-title { font-family: ui-monospace, monospace; font-size: 10px; font-weight: 600; fill: #64748B; letter-spacing: 1.5; }
+      .card-val { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 700; fill: #F8FAFC; }
+    </style>
+  </defs>
+
+  <rect width="900" height="150" rx="10" fill="url(#conBg)" stroke="#1A202E" stroke-width="1" />
+
+  <text x="36" y="32" class="mono" font-size="10.5" font-weight="600" fill="#38BDF8" letter-spacing="2">// 05 CONNECT &amp; COLLABORATE</text>
+  <text x="36" y="52" class="sans" font-size="16" font-weight="800" fill="#FFFFFF">DIRECT TRANSMISSION CHANNELS</text>
+
+  <!-- 4 Clickable Channel Cards -->
+  <!-- Card 1: Live Portfolio -->
+  <g transform="translate(36, 68)">
+    <rect width="190" height="62" class="card" />
+    <text x="14" y="24" class="card-title">PORTFOLIO</text>
+    <text x="14" y="46" class="card-val" fill="#10B981">shaber-portfolio ↗</text>
+    <circle cx="170" cy="31" r="3" fill="#10B981" />
+  </g>
+
+  <!-- Card 2: GitHub -->
+  <g transform="translate(242, 68)">
+    <rect width="190" height="62" class="card" />
+    <text x="14" y="24" class="card-title">GITHUB</text>
+    <text x="14" y="46" class="card-val">@shabermohamadb ↗</text>
+    <circle cx="170" cy="31" r="3" fill="#38BDF8" />
+  </g>
+
+  <!-- Card 3: LinkedIn -->
+  <g transform="translate(448, 68)">
+    <rect width="210" height="62" class="card" />
+    <text x="14" y="24" class="card-title">LINKEDIN</text>
+    <text x="14" y="46" class="card-val">b-shaber-mohamad ↗</text>
+    <circle cx="190" cy="31" r="3" fill="#818CF8" />
+  </g>
+
+  <!-- Card 4: Email -->
+  <g transform="translate(674, 68)">
+    <rect width="190" height="62" class="card" />
+    <text x="14" y="24" class="card-title">DIRECT INBOX</text>
+    <text x="14" y="46" class="card-val">shabermohamad.dev ↗</text>
+    <circle cx="170" cy="31" r="3" fill="#F59E0B" />
+  </g>
+</svg>
