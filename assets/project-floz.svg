@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 90" width="100%" height="90">
+  <defs>
+    <linearGradient id="p2Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0E1326" />
+      <stop offset="100%" stop-color="#090B14" />
+    </linearGradient>
+    <style>
+      .p-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 16px; font-weight: 800; fill: #FFFFFF; }
+      .p-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 12px; fill: #94A3B8; }
+      .p-tag { font-family: ui-monospace, monospace; font-size: 10px; font-weight: 600; fill: #E0AF68; letter-spacing: 1px; }
+      @keyframes beamFlow {
+        0% { stroke-dashoffset: 40; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .flow-line { stroke-dasharray: 6 4; animation: beamFlow 1.2s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="840" height="90" rx="8" fill="url(#p2Grad)" stroke="#1E253E" stroke-width="1" />
+
+  <!-- Animated Commerce Dispatch Visual (Left) -->
+  <g transform="translate(48, 45)">
+    <circle cx="0" cy="0" r="18" fill="#1A1828" stroke="#3D3556" stroke-width="1" />
+    <path d="M -8 -8 L 8 0 L -8 8 Z" fill="#E0AF68" />
+  </g>
+
+  <!-- Project Identity & Description -->
+  <g transform="translate(86, 32)">
+    <text x="0" y="0" class="p-tag">FEATURED 02 // COMMERCIAL APPLICATION</text>
+    <text x="0" y="20" class="p-title">Floz Food Commerce &#8212; Order &amp; Dispatch Suite</text>
+    <text x="0" y="38" class="p-desc">Production food ordering engine &amp; admin dashboard built for A-One Shawarma Spot (Nagercoil).</text>
+  </g>
+
+  <!-- Right Badges -->
+  <g transform="translate(680, 48)">
+    <rect width="130" height="26" rx="4" fill="#1C1828" stroke="#3D3358" stroke-width="1" />
+    <text x="65" y="17" text-anchor="middle" font-family="ui-monospace, monospace" font-size="10.5" font-weight="600" fill="#E0AF68">React &#8226; Express</text>
+  </g>
+</svg>
