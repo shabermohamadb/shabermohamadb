@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0E1326" />
+      <stop offset="100%" stop-color="#070914" />
+    </linearGradient>
+
+    <style>
+      .t-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13.5px; font-weight: 700; fill: #FFFFFF; }
+      .t-items { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11.5px; fill: #94A3B8; }
+      .t-tag { font-family: ui-monospace, monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 1.5px; }
+      @keyframes orbitSpin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes cardGlow {
+        0%, 100% { stroke: #1E253E; }
+        50% { stroke: #37426A; }
+      }
+      .orbit-1 { transform-origin: 32px 32px; animation: orbitSpin 8s linear infinite; }
+      .orbit-2 { transform-origin: 32px 32px; animation: orbitSpin 10s linear infinite reverse; }
+      .orbit-3 { transform-origin: 32px 32px; animation: orbitSpin 7s linear infinite; }
+      .orbit-4 { transform-origin: 32px 32px; animation: orbitSpin 9s linear infinite reverse; }
+      .panel { animation: cardGlow 5s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <g transform="translate(10, 10)">
+    <rect width="395" height="100" rx="8" fill="url(#cardGrad)" stroke="#1E253E" stroke-width="1" class="panel" />
+    <g transform="translate(24, 18)">
+      <circle cx="32" cy="32" r="24" fill="#11162B" stroke="#252F52" stroke-width="1" />
+      <g class="orbit-1"><circle cx="32" cy="12" r="3" fill="#7DCFFF" /></g>
+      <circle cx="32" cy="32" r="7" fill="#7DCFFF" opacity="0.8" />
+    </g>
+    <g transform="translate(95, 34)">
+      <text x="0" y="0" class="t-tag" fill="#7DCFFF">LAYER 01 // INTERFACE</text>
+      <text x="0" y="20" class="t-title">Frontend Engineering</text>
+      <text x="0" y="38" class="t-items">React &#8226; Next.js &#8226; TypeScript &#8226; Tailwind CSS &#8226; Three.js</text>
+    </g>
+  </g>
+
+  <g transform="translate(435, 10)">
+    <rect width="395" height="100" rx="8" fill="url(#cardGrad)" stroke="#1E253E" stroke-width="1" class="panel" />
+    <g transform="translate(24, 18)">
+      <circle cx="32" cy="32" r="24" fill="#14132B" stroke="#2D2552" stroke-width="1" />
+      <g class="orbit-2"><circle cx="32" cy="12" r="3" fill="#BB9AF7" /></g>
+      <circle cx="32" cy="32" r="7" fill="#BB9AF7" opacity="0.8" />
+    </g>
+    <g transform="translate(95, 34)">
+      <text x="0" y="0" class="t-tag" fill="#BB9AF7">LAYER 02 // RUNTIMES</text>
+      <text x="0" y="20" class="t-title">Backend &amp; Distributed Systems</text>
+      <text x="0" y="38" class="t-items">Node.js &#8226; Express.js &#8226; Python &#8226; REST APIs &#8226; Socket.IO</text>
+    </g>
+  </g>
+
+  <g transform="translate(10, 130)">
+    <rect width="395" height="100" rx="8" fill="url(#cardGrad)" stroke="#1E253E" stroke-width="1" class="panel" />
+    <g transform="translate(24, 18)">
+      <circle cx="32" cy="32" r="24" fill="#151A22" stroke="#253545" stroke-width="1" />
+      <g class="orbit-3"><circle cx="32" cy="12" r="3" fill="#2DD4BF" /></g>
+      <circle cx="32" cy="32" r="7" fill="#2DD4BF" opacity="0.8" />
+    </g>
+    <g transform="translate(95, 34)">
+      <text x="0" y="0" class="t-tag" fill="#2DD4BF">LAYER 03 // PERSISTENCE</text>
+      <text x="0" y="20" class="t-title">Databases &amp; Cloud State</text>
+      <text x="0" y="38" class="t-items">PostgreSQL &#8226; Supabase &#8226; MongoDB &#8226; Relational Schemas</text>
+    </g>
+  </g>
+
+  <g transform="translate(435, 130)">
+    <rect width="395" height="100" rx="8" fill="url(#cardGrad)" stroke="#1E253E" stroke-width="1" class="panel" />
+    <g transform="translate(24, 18)">
+      <circle cx="32" cy="32" r="24" fill="#191522" stroke="#372847" stroke-width="1" />
+      <g class="orbit-4"><circle cx="32" cy="12" r="3" fill="#E0AF68" /></g>
+      <circle cx="32" cy="32" r="7" fill="#E0AF68" opacity="0.8" />
+    </g>
+    <g transform="translate(95, 34)">
+      <text x="0" y="0" class="t-tag" fill="#E0AF68">LAYER 04 // INTELLIGENCE</text>
+      <text x="0" y="20" class="t-title">AI, Machine Learning &amp; DevOps</text>
+      <text x="0" y="38" class="t-items">Python &#8226; Scikit-Learn &#8226; Pandas &#8226; Docker &#8226; Linux &#8226; Git</text>
+    </g>
+  </g>
+</svg>

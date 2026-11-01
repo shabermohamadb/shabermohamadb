@@ -2,9 +2,9 @@
   <defs>
     <linearGradient id="bladeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#181B34" stop-opacity="0.1" />
-      <stop offset="30%" stop-color="#7DCFFF" stop-opacity="0.8" />
+      <stop offset="30%" stop-color="#7DCFFF" stop-opacity="0.85" />
       <stop offset="50%" stop-color="#BB9AF7" stop-opacity="1" />
-      <stop offset="70%" stop-color="#7DCFFF" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#7DCFFF" stop-opacity="0.85" />
       <stop offset="100%" stop-color="#181B34" stop-opacity="0.1" />
     </linearGradient>
 
@@ -14,30 +14,18 @@
         100% { transform: translateX(900px); }
       }
       @keyframes nodePulse {
-        0%, 100% { transform: scale(1); opacity: 0.6; }
+        0%, 100% { transform: scale(1); opacity: 0.7; }
         50% { transform: scale(1.4); opacity: 1; }
       }
-      .beam {
-        animation: beamTravel 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-      }
-      .node {
-        transform-origin: 450px 12px;
-        animation: nodePulse 2.4s ease-in-out infinite;
-      }
+      .beam { animation: beamTravel 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+      .node { transform-origin: 450px 12px; animation: nodePulse 2.4s ease-in-out infinite; }
     </style>
   </defs>
 
-  <!-- Base Line -->
   <line x1="20" y1="12" x2="880" y2="12" stroke="#1B2238" stroke-width="1" />
-  
-  <!-- Sweeping Laser Beam -->
-  <g clip-path="url(#dividerClip)">
-    <line class="beam" x1="0" y1="12" x2="220" y2="12" stroke="url(#bladeGrad)" stroke-width="2" />
-  </g>
-
-  <!-- Central Energy Core -->
-  <circle class="node" cx="450" cy="12" r="4.5" fill="#BB9AF7" />
-  <circle cx="450" cy="12" r="2" fill="#FFFFFF" />
+  <line class="beam" x1="0" y1="12" x2="220" y2="12" stroke="url(#bladeGrad)" stroke-width="2" />
+  <circle class="node" cx="450" cy="12" r="4" fill="#BB9AF7" />
+  <circle cx="450" cy="12" r="1.8" fill="#FFFFFF" />
   <circle cx="430" cy="12" r="1.5" fill="#7DCFFF" />
   <circle cx="470" cy="12" r="1.5" fill="#7DCFFF" />
 </svg>
