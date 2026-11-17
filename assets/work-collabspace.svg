@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 240" width="100%" height="100%">
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+
+      /* Real packet animation along the socket conduit */
+      @keyframes socketPulse {
+        0% { cx: 480px; opacity: 1; }
+        50% { cx: 640px; opacity: 1; }
+        100% { cx: 480px; opacity: 1; }
+      }
+      .sock-pkt { animation: socketPulse 2.8s ease-in-out infinite; }
+
+      @keyframes sockPulse2 {
+        0% { cx: 640px; opacity: 1; }
+        50% { cx: 800px; opacity: 1; }
+        100% { cx: 640px; opacity: 1; }
+      }
+      .sock-pkt2 { animation: sockPulse2 2.2s ease-in-out infinite 0.5s; }
+
+      @keyframes typingDot {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 1; }
+      }
+      .t-dot1 { animation: typingDot 1.4s infinite; }
+      .t-dot2 { animation: typingDot 1.4s infinite 0.2s; }
+      .t-dot3 { animation: typingDot 1.4s infinite 0.4s; }
+    </style>
+  </defs>
+
+  <rect width="940" height="240" fill="#0e0f11" rx="4" stroke="#27272a" stroke-width="1" />
+
+  <!-- Left Side: Real Collaborative App Layout Preview -->
+  <g transform="translate(24, 24)">
+    <!-- App Header -->
+    <rect width="360" height="192" rx="3" fill="#141518" stroke="#27272a" stroke-width="1" />
+    <rect width="360" height="26" fill="#1a1b1f" />
+    <line x1="0" y1="26" x2="360" y2="26" stroke="#27272a" stroke-width="1" />
+    
+    <!-- Window controls -->
+    <circle cx="12" cy="13" r="3.5" fill="#ef4444" opacity="0.8" />
+    <circle cx="24" cy="13" r="3.5" fill="#f59e0b" opacity="0.8" />
+    <circle cx="36" cy="13" r="3.5" fill="#10b981" opacity="0.8" />
+    <text x="54" y="16" class="mono" font-size="9" fill="#a1a1aa">collabspace // room: #engineering-sync</text>
+
+    <!-- Sidebar Channels -->
+    <rect x="0" y="26" width="100" height="166" fill="#111215" />
+    <line x1="100" y1="26" x2="100" y2="192" stroke="#27272a" stroke-width="1" />
+    <text x="12" y="44" class="mono" font-size="8" fill="#71717a">CHANNELS</text>
+    <text x="12" y="60" class="mono" font-size="8.5" fill="#2563eb" font-weight="700"># sync-core</text>
+    <text x="12" y="74" class="mono" font-size="8.5" fill="#a1a1aa"># general</text>
+    <text x="12" y="88" class="mono" font-size="8.5" fill="#a1a1aa"># ai-agent</text>
+    <text x="12" y="102" class="mono" font-size="8.5" fill="#a1a1aa"># deploy</text>
+
+    <!-- Chat Messages Preview -->
+    <g transform="translate(112, 44)">
+      <!-- Message 1 -->
+      <circle cx="8" cy="8" r="6" fill="#2563eb" />
+      <text x="20" y="7" class="mono" font-size="8" font-weight="700" fill="#f4f4f5">shaber</text>
+      <text x="56" y="7" class="mono" font-size="7" fill="#71717a">14:02</text>
+      <text x="20" y="18" class="sans" font-size="8" fill="#d4d4d8">Deploying socket cluster to edge</text>
+
+      <!-- Message 2 (@AI response) -->
+      <g transform="translate(0, 30)">
+        <rect x="18" y="0" width="220" height="34" rx="2" fill="#181920" stroke="#27272a" stroke-width="0.8" />
+        <circle cx="8" cy="8" r="6" fill="#10b981" />
+        <text x="26" y="10" class="mono" font-size="8" font-weight="700" fill="#10b981">@AI Agent</text>
+        <text x="76" y="10" class="mono" font-size="7" fill="#71717a">BOT &#8226; 14:02</text>
+        <text x="26" y="22" class="sans" font-size="7.5" fill="#a1a1aa">Latency verified: 12ms round-trip</text>
+      </g>
+
+      <!-- Typing Indicator -->
+      <g transform="translate(20, 78)">
+        <text class="mono" font-size="7.5" fill="#71717a">sarah is typing</text>
+        <circle class="t-dot1" cx="64" cy="-2" r="1.5" fill="#71717a" />
+        <circle class="t-dot2" cx="70" cy="-2" r="1.5" fill="#71717a" />
+        <circle class="t-dot3" cx="76" cy="-2" r="1.5" fill="#71717a" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Side: Architectural Data Pipeline -->
+  <g transform="translate(420, 24)">
+    <text class="mono" font-size="10" font-weight="700" fill="#a1a1aa" letter-spacing="1">EVENT-DRIVEN WEBSOCKET PIPELINE</text>
+    <text y="20" class="sans" font-size="13" font-weight="700" fill="#f4f4f5">Sub-millisecond multi-user state synchronization</text>
+
+    <!-- Pipeline Node Diagram -->
+    <g transform="translate(0, 50)">
+      <!-- Connecting Bus -->
+      <line x1="60" y1="50" x2="440" y2="50" stroke="#27272a" stroke-width="1.5" />
+      <line x1="60" y1="50" x2="440" y2="50" stroke="#3f3f46" stroke-width="1" stroke-dasharray="4 4" />
+
+      <!-- Animated Packets -->
+      <circle class="sock-pkt" cy="50" r="3.5" fill="#2563eb" />
+      <circle class="sock-pkt2" cy="50" r="3.5" fill="#10b981" />
+
+      <!-- Node 1: Client Node -->
+      <g transform="translate(60, 50)">
+        <rect x="-45" y="-24" width="90" height="48" rx="3" fill="#141518" stroke="#27272a" stroke-width="1" />
+        <text text-anchor="middle" y="-6" class="mono" font-size="8" font-weight="700" fill="#a1a1aa">CLIENT</text>
+        <text text-anchor="middle" y="8" class="sans" font-size="9" font-weight="700" fill="#ffffff">React + TS</text>
+        <text text-anchor="middle" y="18" class="mono" font-size="7" fill="#71717a">Browser DOM</text>
+      </g>
+
+      <!-- Node 2: Socket.IO Broker -->
+      <g transform="translate(220, 50)">
+        <rect x="-50" y="-28" width="100" height="56" rx="3" fill="#181922" stroke="#2563eb" stroke-width="1.2" />
+        <text text-anchor="middle" y="-8" class="mono" font-size="8" font-weight="700" fill="#2563eb">SOCKET BROKER</text>
+        <text text-anchor="middle" y="6" class="sans" font-size="9.5" font-weight="700" fill="#ffffff">Node.js / WS</text>
+        <text text-anchor="middle" y="18" class="mono" font-size="7" fill="#a1a1aa">Room Dispatcher</text>
+      </g>
+
+      <!-- Node 3: AI Daemon & State -->
+      <g transform="translate(380, 50)">
+        <rect x="-45" y="-24" width="90" height="48" rx="3" fill="#141518" stroke="#27272a" stroke-width="1" />
+        <text text-anchor="middle" y="-6" class="mono" font-size="8" font-weight="700" fill="#10b981">@AI DAEMON</text>
+        <text text-anchor="middle" y="8" class="sans" font-size="9" font-weight="700" fill="#ffffff">Postgres DB</text>
+        <text text-anchor="middle" y="18" class="mono" font-size="7" fill="#71717a">Thread Memory</text>
+      </g>
+    </g>
+
+    <!-- Technical Specs Footnote -->
+    <g transform="translate(0, 160)">
+      <text class="mono" font-size="9.5" fill="#71717a">
+        STACK: <tspan fill="#f4f4f5">TypeScript &#8226; React &#8226; Node.js &#8226; Socket.IO &#8226; Prisma &#8226; Tailwind</tspan>
+      </text>
+      <text y="16" class="mono" font-size="8.5" fill="#52525b">
+        DEPLOYMENT: Sub-millisecond duplex conduits with nested message threading &amp; presence sync.
+      </text>
+    </g>
+  </g>
+</svg>

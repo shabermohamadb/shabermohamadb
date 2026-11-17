@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 160" width="100%" height="100%">
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+
+      /* Smooth 3D wireframe rotation */
+      @keyframes spinPoly {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .spin-wire { transform-origin: 75px 80px; animation: spinPoly 16s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="940" height="160" fill="#0e0f11" rx="4" stroke="#27272a" stroke-width="1" />
+
+  <!-- Left: 3D Wireframe Spatial Graphic -->
+  <g transform="translate(24, 0)">
+    <g class="spin-wire">
+      <!-- Polyhedron Isometric Wireframe -->
+      <polygon points="75,40 115,60 115,100 75,120 35,100 35,60" fill="none" stroke="#2563eb" stroke-width="1.2" />
+      <line x1="75" y1="80" x2="75" y2="120" stroke="#3f3f46" stroke-width="1" />
+      <line x1="75" y1="80" x2="115" y2="60" stroke="#3f3f46" stroke-width="1" />
+      <line x1="75" y1="80" x2="35" y2="60" stroke="#3f3f46" stroke-width="1" />
+      <circle cx="75" cy="80" r="3" fill="#ffffff" />
+    </g>
+    <!-- Viewport Coordinates -->
+    <text x="75" y="142" text-anchor="middle" class="mono" font-size="7.5" fill="#71717a">FOV: 45&#176; // THREE.JS WEBGL</text>
+  </g>
+
+  <!-- Right: Project Editorial Content -->
+  <g transform="translate(180, 26)">
+    <text class="mono" font-size="10" font-weight="700" fill="#a1a1aa" letter-spacing="1">PROJECT 03 // MULTIPLAYER 3D GAME</text>
+    <text y="22" class="sans" font-size="18" font-weight="800" fill="#f4f4f5">Hidden Number &#8212; Social Deduction in WebGL</text>
+    <text y="42" class="sans" font-size="11.5" fill="#a1a1aa">
+      A multiplayer social deduction party game built with Three.js (WebGL) spatial depth and server-verified cryptographic number veils. Players navigate dynamic 3D camera angles while deducing hidden target values in real time.
+    </text>
+
+    <!-- Technical Badges -->
+    <g transform="translate(0, 68)">
+      <rect x="0" y="0" width="88" height="20" rx="2" fill="#141518" stroke="#27272a" stroke-width="1" />
+      <text x="44" y="13" text-anchor="middle" class="mono" font-size="8.5" fill="#f4f4f5">TypeScript</text>
+
+      <rect x="96" y="0" width="60" height="20" rx="2" fill="#141518" stroke="#27272a" stroke-width="1" />
+      <text x="126" y="13" text-anchor="middle" class="mono" font-size="8.5" fill="#f4f4f5">React</text>
+
+      <rect x="164" y="0" width="115" height="20" rx="2" fill="#141518" stroke="#27272a" stroke-width="1" />
+      <text x="221" y="13" text-anchor="middle" class="mono" font-size="8.5" fill="#2563eb">Three.js (WebGL)</text>
+
+      <rect x="287" y="0" width="80" height="20" rx="2" fill="#141518" stroke="#27272a" stroke-width="1" />
+      <text x="327" y="13" text-anchor="middle" class="mono" font-size="8.5" fill="#f4f4f5">Socket.IO</text>
+
+      <rect x="375" y="0" width="90" height="20" rx="2" fill="#141518" stroke="#27272a" stroke-width="1" />
+      <text x="420" y="13" text-anchor="middle" class="mono" font-size="8.5" fill="#f4f4f5">Tailwind CSS</text>
+    </g>
+
+    <text y="108" class="mono" font-size="9" fill="#10b981">
+      &#10003; LIVE WEBGL APPLICATION AVAILABLE
+    </text>
+  </g>
+</svg>
