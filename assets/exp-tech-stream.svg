@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 110" width="100%" height="100%">
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+
+      @keyframes streamSlide {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .stream-track {
+        display: inline-block;
+        animation: streamSlide 28s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="940" height="110" fill="#08090c" rx="4" stroke="#181a22" stroke-width="1" />
+
+  <!-- Top label indicator -->
+  <g transform="translate(32, 24)">
+    <text class="mono" font-size="9.5" font-weight="700" fill="#71717a" letter-spacing="1.5">STACK INDEX // VERIFIED TOOLS IN PRODUCTION</text>
+  </g>
+
+  <!-- Horizontal Conveyor Stream -->
+  <g transform="translate(0, 42)">
+    <g class="stream-track">
+      <!-- SET 1 -->
+      <g transform="translate(32, 0)">
+        <!-- React -->
+        <rect x="0" y="0" width="80" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="18" cy="19" r="6" fill="#61dafb" />
+        <text x="32" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">React</text>
+
+        <!-- Next.js -->
+        <rect x="90" y="0" width="86" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="108" cy="19" r="6" fill="#ffffff" />
+        <text x="122" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Next.js</text>
+
+        <!-- TypeScript -->
+        <rect x="186" y="0" width="98" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <rect x="196" y="11" width="16" height="16" rx="2" fill="#3178c6" />
+        <text x="204" y="23" class="mono" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">TS</text>
+        <text x="220" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">TypeScript</text>
+
+        <!-- Three.js (WebGL) -->
+        <rect x="294" y="0" width="88" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <polygon points="310,12 318,26 302,26" fill="#ffffff" />
+        <text x="326" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Three.js</text>
+
+        <!-- Tailwind CSS -->
+        <rect x="392" y="0" width="88" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="410" cy="19" r="6" fill="#38bdf8" />
+        <text x="424" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Tailwind</text>
+
+        <!-- Node.js -->
+        <rect x="490" y="0" width="84" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="508" cy="19" r="6" fill="#5fa04e" />
+        <text x="522" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Node.js</text>
+
+        <!-- Socket.IO -->
+        <rect x="584" y="0" width="94" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="602" cy="19" r="6" fill="#010101" stroke="#ffffff" stroke-width="1" />
+        <text x="618" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Socket.IO</text>
+
+        <!-- Python -->
+        <rect x="688" y="0" width="80" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="706" cy="19" r="6" fill="#3776ab" />
+        <text x="720" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Python</text>
+
+        <!-- PostgreSQL -->
+        <rect x="778" y="0" width="94" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="796" cy="19" r="6" fill="#4169e1" />
+        <text x="810" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">PostgreSQL</text>
+
+        <!-- Supabase -->
+        <rect x="882" y="0" width="94" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="900" cy="19" r="6" fill="#3ecf8e" />
+        <text x="914" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Supabase</text>
+
+        <!-- PySide6 (Qt) -->
+        <rect x="986" y="0" width="88" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="1004" cy="19" r="6" fill="#41cd52" />
+        <text x="1018" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">PySide6</text>
+
+        <!-- Docker & Linux -->
+        <rect x="1084" y="0" width="84" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="1102" cy="19" r="6" fill="#2496ed" />
+        <text x="1116" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Docker</text>
+      </g>
+
+      <!-- SET 2 (DUPLICATE FOR SEAMLESS LOOP) -->
+      <g transform="translate(1212, 0)">
+        <rect x="0" y="0" width="80" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="18" cy="19" r="6" fill="#61dafb" />
+        <text x="32" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">React</text>
+
+        <rect x="90" y="0" width="86" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="108" cy="19" r="6" fill="#ffffff" />
+        <text x="122" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Next.js</text>
+
+        <rect x="186" y="0" width="98" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <rect x="196" y="11" width="16" height="16" rx="2" fill="#3178c6" />
+        <text x="204" y="23" class="mono" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle">TS</text>
+        <text x="220" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">TypeScript</text>
+
+        <rect x="294" y="0" width="88" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <polygon points="310,12 318,26 302,26" fill="#ffffff" />
+        <text x="326" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Three.js</text>
+
+        <rect x="392" y="0" width="88" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="410" cy="19" r="6" fill="#38bdf8" />
+        <text x="424" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Tailwind</text>
+
+        <rect x="490" y="0" width="84" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="508" cy="19" r="6" fill="#5fa04e" />
+        <text x="522" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Node.js</text>
+
+        <rect x="584" y="0" width="94" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="602" cy="19" r="6" fill="#010101" stroke="#ffffff" stroke-width="1" />
+        <text x="618" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Socket.IO</text>
+
+        <rect x="688" y="0" width="80" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="706" cy="19" r="6" fill="#3776ab" />
+        <text x="720" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Python</text>
+
+        <rect x="778" y="0" width="94" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="796" cy="19" r="6" fill="#4169e1" />
+        <text x="810" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">PostgreSQL</text>
+
+        <rect x="882" y="0" width="94" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="900" cy="19" r="6" fill="#3ecf8e" />
+        <text x="914" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Supabase</text>
+
+        <rect x="986" y="0" width="88" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="1004" cy="19" r="6" fill="#41cd52" />
+        <text x="1018" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">PySide6</text>
+
+        <rect x="1084" y="0" width="84" height="38" rx="3" fill="#0f1117" stroke="#222530" stroke-width="1" />
+        <circle cx="1102" cy="19" r="6" fill="#2496ed" />
+        <text x="1116" y="23" class="sans" font-size="11" font-weight="700" fill="#ffffff">Docker</text>
+      </g>
+    </g>
+  </g>
+</svg>
