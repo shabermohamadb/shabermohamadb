@@ -1,72 +1,75 @@
-# SHABER MOHAMAD B — EDITORIAL DEVELOPER IDENTITY
-## Swiss Editorial Graphic Design & Authentic Creative Developer Portfolio
+# SHABER MOHAMAD B. — PROFESSIONAL ENGINEERING PORTFOLIO
+## Master Production Architecture & Deployment Guide
 
-This repository contains the handcrafted, bespoke GitHub Profile README for **SHABER MOHAMAD B**.
-
----
-
-## 🏛️ Design Philosophy
-
-Built on the principles of **Swiss International Typographic Style**, **modern brutalist typography**, and **independent creative developer studios** (e.g. Minimal Gallery, Hoverstat.es, Brutalist Websites):
-
-- **Stark, tactile palette**: Void Charcoal `#0c0d0e`, Off-White `#f4f4f5`, Hairline Slate `#27272a`, and singular Electric Cobalt `#2563eb`.
-- **Brutalist oversized typography**: Massive, confident headline `"I BUILD THINGS FOR THE WEB."`.
-- **Editorial asymmetry**: Dynamic two-column dossier, typographic index tables, and bespoke project treatments.
-- **Intentional motion**: Infinite scrolling typography marquee, mechanical rotating compass, clean vector line drawings, and real-time Socket.IO packet conduits.
-- **Zero AI-template clichés**: No sci-fi HUDs, no glowing particles, no fake orbital diagrams, no Layer 01/02 badges, and no corporate buzzwords.
+This repository contains the production-grade, art-directed GitHub Profile README for **SHABER MOHAMAD B.**
 
 ---
 
-## 📁 Repository Structure
+## 🏛️ Creative Direction & Brand Architecture
+
+Designed as a high-end digital product studio portfolio, adhering to strict editorial principles:
+
+- **Foundation**: Deep charcoal `#0a0b0e`, warm white typography `#f5f5f7`, hairline boundaries `#22242a`, and restrained electric blue `#2563eb`.
+- **Typographic Hierarchy**: Distinctive bold display name with signature headline:
+  > *"Engineering digital experiences. Building products that matter."*
+- **Authentic Engineering Voice**: Down-to-earth, technically accurate documentation of real-time systems, spatial WebGL computing, and full-stack software.
+- **Genuine Project Visuals**: Individual, custom-designed architectural vector schematics for each project. No cloned cards.
+- **Intentional Motion Language**: 14 distinct, purposeful animation mechanics powered by native CSS `@keyframes` in SVG.
+
+---
+
+## 📁 Repository Directory Structure
 
 ```text
 shabermohamadb/
 ├── .github/
 │   └── workflows/
-│       └── snake.yml                      # GitHub Actions automated contribution snake
+│       └── snake.yml                   # Automated 12-hour cron GitHub contribution grid snake
 ├── assets/
-│   ├── editorial-hero.svg                 # Oversized typography poster, kinetic marquee, mechanical wireframe
-│   ├── work-collabspace.svg               # Bespoke architecture schematic & collaborative UI preview
-│   ├── work-floz.svg                      # Production food ordering receipt & dispatch pipeline
-│   ├── work-hidden-number.svg             # 3D spatial rotating polyhedral wireframe in WebGL
-│   ├── work-circuitx.svg                  # Desktop EDA circuit schematic & trace routing
-│   ├── divider-editorial.svg              # 1px hairline structural rule
-│   └── editorial-footer.svg               # Handcrafted signature stroke & typographic sign-off
-├── README.md                              # Production Swiss Editorial GitHub Profile README
-├── SETUP.md                               # This documentation guide
-└── validate_profile.py                    # Complete verification test suite
+│   ├── portfolio-hero.svg              # Signature identity, rotating mechanical compass, marquee ticker
+│   ├── work-collabspace.svg            # CollabSpace: bi-directional WebSocket conduit & chat UI preview
+│   ├── work-floz.svg                   # Floz Food Commerce: real restaurant ticket & dispatch pipeline
+│   ├── work-hidden-number.svg          # Hidden Number: rotating 3D polyhedral wireframe in Three.js
+│   ├── work-circuitx.svg               # CircuitX EDA: desktop schematic netlist & PCB trace routing
+│   ├── project-alameen.svg             # Al-Ameen: enterprise document synthesis & database sync
+│   ├── project-oggy.svg                # Oggy 3D: WebGL camera frustum & OrbitControls viewport
+│   ├── divider-editorial.svg           # 1px minimal structural hairline rule
+│   └── portfolio-footer.svg            # Signature sign-off stroke & institutional credentials
+├── README.md                           # Master Production GitHub Profile README
+├── SETUP.md                            # Complete setup & architecture reference guide
+└── validate_profile.py                 # Automated XML & HTTP link verification test suite
 ```
 
 ---
 
-## 🚀 How to Push Live to GitHub
+## 🚀 Deployment: Push Live to GitHub
 
-Your local repository is located at:
+Your local git repository is located at:
 `/home/shaber/.gemini/antigravity/scratch/shabermohamadb`
 
-To push the redesigned profile to your live GitHub profile:
+To push the new portfolio live to your GitHub profile:
 
 ```bash
 cd /home/shaber/.gemini/antigravity/scratch/shabermohamadb
 
-# 1. Review status
+# 1. Inspect status
 git status
 
-# 2. Stage updated assets and README
-git add README.md SETUP.md assets/
+# 2. Stage updated assets, workflows, and documentation
+git add README.md SETUP.md assets/ .github/
 
-# 3. Commit with a clear message
-git commit -m "feat: redesign profile with swiss editorial typography, bespoke project schematics, and kinetic marquee"
+# 3. Commit with a structured message
+git commit -m "feat: launch master professional engineering portfolio with custom schematics and motion design system"
 
-# 4. Push to origin main
+# 4. Push directly to main
 git push origin main
 ```
 
 ---
 
-## 🧪 Automated Health Check
+## 🧪 Quality Verification
 
-Verify all SVG assets, XML validity, and external URLs anytime:
+Run the built-in validation script anytime to verify SVG XML health and external URL statuses:
 
 ```bash
 python3 validate_profile.py

@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 380" width="100%" height="100%">
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+
+      /* Vector path line drawing */
+      @keyframes pathDraw {
+        0% { stroke-dashoffset: 450; }
+        50% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .wire-draw {
+        stroke-dasharray: 450;
+        animation: pathDraw 6s ease-in-out infinite alternate;
+      }
+
+      /* Slow mechanical rotating compass */
+      @keyframes slowCompass {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .rotate-mech {
+        transform-origin: 810px 175px;
+        animation: slowCompass 28s linear infinite;
+      }
+
+      /* Continuous horizontal scrolling marquee */
+      @keyframes tickerMarquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .ticker-tape {
+        display: inline-block;
+        animation: tickerMarquee 24s linear infinite;
+      }
+
+      /* Status indicator pulse */
+      @keyframes pulseGlint {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.25; }
+      }
+      .status-dot { animation: pulseGlint 2.2s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Deep Charcoal Foundation -->
+  <rect width="940" height="380" fill="#0a0b0e" />
+
+  <!-- Outer Hairline Structural Grid -->
+  <rect x="20" y="20" width="900" height="340" fill="none" stroke="#22242a" stroke-width="1" />
+
+  <!-- Top Metadata Folio -->
+  <g transform="translate(42, 48)">
+    <circle class="status-dot" cx="4" cy="4" r="3.5" fill="#2563eb" />
+    <text x="18" y="7" class="mono" font-size="11" font-weight="700" fill="#f5f5f7" letter-spacing="1.2">SHABER MOHAMAD B.</text>
+    <text x="215" y="7" class="mono" font-size="11" fill="#52525b">&#8212;</text>
+    <text x="238" y="7" class="mono" font-size="11" font-weight="600" fill="#3b82f6" letter-spacing="1">FULL-STACK DEVELOPER</text>
+    <text x="445" y="7" class="mono" font-size="11" fill="#52525b">&#8212;</text>
+    <text x="468" y="7" class="mono" font-size="11" fill="#71717a">B.TECH AI &amp; DATA SCIENCE</text>
+    <text x="856" y="7" class="mono" font-size="11" fill="#a1a1aa" text-anchor="end">STELLA MARY&apos;S</text>
+  </g>
+
+  <!-- Horizontal Hairline Separator -->
+  <line x1="20" y1="70" x2="920" y2="70" stroke="#22242a" stroke-width="1" />
+
+  <!-- HERO TYPOGRAPHY: NAME & SIGNATURE HEADLINE -->
+  <g transform="translate(44, 134)">
+    <!-- Name Display -->
+    <text y="0" class="sans" font-size="52" font-weight="900" fill="#f5f5f7" letter-spacing="-1.5">
+      SHABER MOHAMAD B<tspan fill="#2563eb">.</tspan>
+    </text>
+
+    <!-- Role Sub-Title -->
+    <text y="32" class="mono" font-size="14" font-weight="700" fill="#3b82f6" letter-spacing="2">
+      FULL-STACK DEVELOPER
+    </text>
+
+    <!-- Required Signature Headline -->
+    <text y="78" class="sans" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="-0.3">
+      &#8220;Engineering digital experiences.
+    </text>
+    <text y="108" class="sans" font-size="22" font-weight="700" fill="#ffffff" letter-spacing="-0.3">
+      Building products that matter.&#8221;
+    </text>
+
+    <!-- Narrative Subtext -->
+    <text y="142" class="sans" font-size="13.5" font-weight="400" fill="#a1a1aa">
+      Specializing in real-time WebSockets, 3D WebGL computing, and full-stack architecture.
+    </text>
+  </g>
+
+  <!-- RIGHT MECHANICAL SCHEMATIC (Handcrafted vector compass & wireframe) -->
+  <g class="rotate-mech">
+    <circle cx="810" cy="175" r="58" fill="none" stroke="#22242a" stroke-width="1" />
+    <circle cx="810" cy="175" r="46" fill="none" stroke="#33363f" stroke-width="1" stroke-dasharray="3 4" />
+    <circle cx="810" cy="175" r="30" fill="none" stroke="#22242a" stroke-width="1" />
+    <circle cx="810" cy="175" r="3.5" fill="#2563eb" />
+    <line x1="740" y1="175" x2="880" y2="175" stroke="#22242a" stroke-width="1" />
+    <line x1="810" y1="105" x2="810" y2="245" stroke="#22242a" stroke-width="1" />
+  </g>
+
+  <!-- Kinetic 3D Wireframe Box Detail -->
+  <g transform="translate(810, 175)">
+    <polygon class="wire-draw" points="0,-26 24,-13 24,14 0,27 -24,14 -24,-13" fill="none" stroke="#2563eb" stroke-width="1.2" />
+    <line class="wire-draw" x1="0" y1="2" x2="0" y2="27" stroke="#52525b" stroke-width="1" />
+    <line class="wire-draw" x1="0" y1="2" x2="24" y2="-13" stroke="#52525b" stroke-width="1" />
+    <line class="wire-draw" x1="0" y1="2" x2="-24" y2="-13" stroke="#52525b" stroke-width="1" />
+  </g>
+
+  <!-- Bottom Hairline Separator -->
+  <line x1="20" y1="316" x2="920" y2="316" stroke="#22242a" stroke-width="1" />
+
+  <!-- Bottom Scrolling Marquee Ticker -->
+  <g transform="translate(0, 342)">
+    <g class="ticker-tape">
+      <text class="mono" font-size="10.5" font-weight="600" fill="#71717a" letter-spacing="1.5">
+        FULL-STACK APPLICATION DEVELOPMENT &#8226; HIGH-CONCURRENCY REAL-TIME SYSTEMS &#8226; THREE.JS 3D WEB GRAPHICS &#8226; DATABASE ARCHITECTURE &#8226; AUTOMATION WORKFLOWS &#8226; PYTHON &amp; EDA &#8226; STELLA MARY&apos;S COLLEGE OF ENGINEERING &#8226; TAMIL NADU, INDIA &#8226; FULL-STACK APPLICATION DEVELOPMENT &#8226; HIGH-CONCURRENCY REAL-TIME SYSTEMS &#8226; THREE.JS 3D WEB GRAPHICS &#8226; DATABASE ARCHITECTURE &#8226; AUTOMATION WORKFLOWS &#8226; PYTHON &amp; EDA &#8226; STELLA MARY&apos;S COLLEGE OF ENGINEERING &#8226; TAMIL NADU, INDIA &#8226;&#160;
+      </text>
+    </g>
+  </g>
+</svg>

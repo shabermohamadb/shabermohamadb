@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 140" width="100%" height="100%">
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+
+      @keyframes sigDraw {
+        0% { stroke-dashoffset: 500; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .sig-stroke {
+        stroke-dasharray: 500;
+        animation: sigDraw 4s ease-in-out infinite alternate;
+      }
+    </style>
+  </defs>
+
+  <rect width="940" height="140" fill="#0a0b0e" />
+  <line x1="20" y1="20" x2="920" y2="20" stroke="#22242a" stroke-width="1" />
+
+  <!-- Required Signature Closing Quote -->
+  <g transform="translate(44, 62)">
+    <text class="sans" font-size="20" font-weight="700" fill="#f5f5f7">
+      &#8220;Curiosity drives the process. Engineering makes it real.&#8221;
+    </text>
+    <text y="28" class="mono" font-size="11" fill="#71717a">
+      SHABER MOHAMAD B. &#8226; B.TECH AI &amp; DATA SCIENCE &#8226; STELLA MARY&apos;S COLLEGE OF ENGINEERING
+    </text>
+  </g>
+
+  <!-- Kinetic Vector Accent Line -->
+  <path class="sig-stroke" d="M 720 70 Q 770 35 820 65 T 890 60" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round" />
+</svg>
