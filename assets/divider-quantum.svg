@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 30" width="100%" height="30">
+  <defs>
+    <linearGradient id="divQuantum" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+    <style>
+      @keyframes pulseQuantum {
+        0%, 100% { transform: scale(1); opacity: 0.5; }
+        50% { transform: scale(1.3); opacity: 1; }
+      }
+      .q-pulse { transform-origin: 470px 15px; animation: pulseQuantum 2s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <line x1="0" y1="15" x2="440" y2="15" stroke="url(#divQuantum)" stroke-width="1" stroke-dasharray="6 4" />
+  <line x1="500" y1="15" x2="940" y2="15" stroke="url(#divQuantum)" stroke-width="1" stroke-dasharray="6 4" />
+
+  <g class="q-pulse">
+    <circle cx="470" cy="15" r="10" fill="#081024" stroke="#00f0ff" stroke-width="1.2" />
+    <circle cx="470" cy="15" r="4" fill="#00f0ff" />
+  </g>
+</svg>

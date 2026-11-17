@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p5Bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#050a18" />
+      <stop offset="100%" stop-color="#080e20" />
+    </linearGradient>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+      @keyframes pcbPulse {
+        0% { stroke-dashoffset: 40; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .pcb-trace { stroke-dasharray: 6 4; animation: pcbPulse 1.8s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="940" height="130" rx="6" fill="url(#p5Bg)" stroke="#1e293b" stroke-width="1" />
+  <rect width="4" height="130" rx="1" fill="#00f0ff" />
+
+  <!-- Left Circuit Trace Schematic Visual -->
+  <g transform="translate(32, 45)">
+    <circle cx="6" cy="18" r="4" fill="#00f0ff" />
+    <path class="pcb-trace" d="M 10 18 L 22 18 L 28 8 L 38 8" fill="none" stroke="#00f0ff" stroke-width="1.8" />
+    <circle cx="42" cy="8" r="3.5" fill="#38bdf8" />
+    <path class="pcb-trace" d="M 10 18 L 22 18 L 28 28 L 38 28" fill="none" stroke="#38bdf8" stroke-width="1.8" />
+    <circle cx="42" cy="28" r="3.5" fill="#00f0ff" />
+  </g>
+
+  <!-- Project Brief -->
+  <g transform="translate(98, 30)">
+    <text class="mono" font-size="9" font-weight="700" fill="#00f0ff" letter-spacing="1.5">PROJECT 05 // SYSTEM SOFTWARE &amp; INTELLIGENT EDA</text>
+    <text y="22" class="sans" font-size="18" font-weight="800" fill="#ffffff">CircuitX &#8212; AI-Based PCB Designer</text>
+    <text y="42" class="sans" font-size="11.5" fill="#94a3b8">
+      Desktop electronic design automation &amp; schematic routing suite engineered with PySide6 (Qt) &amp; NumPy graph heuristics.
+    </text>
+    <text y="64" class="mono" font-size="10" font-weight="600" fill="#38bdf8">
+      Python &#8226; PySide6 (Qt6) &#8226; NumPy &#8226; Pytest &#8226; Vector Heuristics
+    </text>
+  </g>
+
+  <!-- Right Visual Status Pill -->
+  <g transform="translate(720, 48)">
+    <rect width="180" height="34" rx="4" fill="#060e22" stroke="#00f0ff" stroke-width="0.8" />
+    <text x="90" y="21" text-anchor="middle" class="mono" font-size="10" font-weight="700" fill="#00f0ff" letter-spacing="1">
+      SYSTEM EDA &#8226; QT6
+    </text>
+  </g>
+</svg>

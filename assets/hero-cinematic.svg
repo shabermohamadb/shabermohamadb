@@ -1,0 +1,327 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 480" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04060a" />
+      <stop offset="45%" stop-color="#080d1a" />
+      <stop offset="85%" stop-color="#060913" />
+      <stop offset="100%" stop-color="#020306" />
+    </linearGradient>
+
+    <!-- Radial Cyan Ambient Glow -->
+    <radialGradient id="centerGlow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.18" />
+      <stop offset="40%" stop-color="#0070f3" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#04060a" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Radial Horizon Flare -->
+    <radialGradient id="horizonGlow" cx="50%" cy="100%" r="60%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Title Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="40%" stop-color="#f0f9ff" />
+      <stop offset="75%" stop-color="#bae6fd" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+
+    <!-- Laser Scanning Beam Gradient -->
+    <linearGradient id="scannerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0" />
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Cyan Line Shimmer -->
+    <linearGradient id="lineShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.1" />
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0.1" />
+    </linearGradient>
+
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+
+      /* Scanning beam animation */
+      @keyframes scanMotion {
+        0% { transform: translateY(-40px); opacity: 0; }
+        15% { opacity: 0.9; }
+        85% { opacity: 0.9; }
+        100% { transform: translateY(500px); opacity: 0; }
+      }
+      .scanner-beam {
+        animation: scanMotion 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+
+      /* Radar Sweep Animation */
+      @keyframes radarSweep {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .radar-arm {
+        transform-origin: 865px 75px;
+        animation: radarSweep 4s linear infinite;
+      }
+
+      /* Particle Floating */
+      @keyframes floatSlow1 {
+        0%, 100% { transform: translateY(0) translateX(0); opacity: 0.3; }
+        50% { transform: translateY(-18px) translateX(6px); opacity: 0.95; }
+      }
+      @keyframes floatSlow2 {
+        0%, 100% { transform: translateY(0) translateX(0); opacity: 0.2; }
+        50% { transform: translateY(-24px) translateX(-8px); opacity: 0.85; }
+      }
+      @keyframes floatSlow3 {
+        0%, 100% { transform: translateY(0) translateX(0); opacity: 0.4; }
+        50% { transform: translateY(-14px) translateX(10px); opacity: 1; }
+      }
+      .pt1 { animation: floatSlow1 4s ease-in-out infinite; }
+      .pt2 { animation: floatSlow2 5.5s ease-in-out infinite; }
+      .pt3 { animation: floatSlow3 3.5s ease-in-out infinite; }
+
+      /* Perspective grid translation */
+      @keyframes gridPulse {
+        0%, 100% { opacity: 0.15; }
+        50% { opacity: 0.35; }
+      }
+      .grid-lines { animation: gridPulse 6s ease-in-out infinite; }
+
+      /* Equalizer Bar bounce */
+      @keyframes eq1 { 0%, 100% { height: 6px; y: 18px; } 50% { height: 20px; y: 4px; } }
+      @keyframes eq2 { 0%, 100% { height: 16px; y: 8px; } 50% { height: 8px; y: 16px; } }
+      @keyframes eq3 { 0%, 100% { height: 10px; y: 14px; } 50% { height: 22px; y: 2px; } }
+      @keyframes eq4 { 0%, 100% { height: 18px; y: 6px; } 50% { height: 6px; y: 18px; } }
+      .eq-b1 { animation: eq1 1.2s ease-in-out infinite; }
+      .eq-b2 { animation: eq2 0.9s ease-in-out infinite; }
+      .eq-b3 { animation: eq3 1.4s ease-in-out infinite; }
+      .eq-b4 { animation: eq4 1.1s ease-in-out infinite; }
+
+      /* Blinking LED */
+      @keyframes blinkFast {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.2; }
+      }
+      .blink { animation: blinkFast 1.5s ease-in-out infinite; }
+
+      /* Typewriter Text Rotator */
+      @keyframes textCycle1 {
+        0%, 30% { opacity: 1; transform: translateY(0); }
+        33%, 97% { opacity: 0; transform: translateY(-10px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes textCycle2 {
+        0%, 31% { opacity: 0; transform: translateY(10px); }
+        35%, 63% { opacity: 1; transform: translateY(0); }
+        66%, 100% { opacity: 0; transform: translateY(-10px); }
+      }
+      @keyframes textCycle3 {
+        0%, 64% { opacity: 0; transform: translateY(10px); }
+        68%, 95% { opacity: 1; transform: translateY(0); }
+        98%, 100% { opacity: 0; transform: translateY(-10px); }
+      }
+      .cycle-1 { animation: textCycle1 9s cubic-bezier(0.2, 0.8, 0.2, 1) infinite; }
+      .cycle-2 { animation: textCycle2 9s cubic-bezier(0.2, 0.8, 0.2, 1) infinite; }
+      .cycle-3 { animation: textCycle3 9s cubic-bezier(0.2, 0.8, 0.2, 1) infinite; }
+
+      /* Cursor Blink */
+      @keyframes cursorBlink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .cursor { animation: cursorBlink 0.8s step-end infinite; }
+
+      /* Main Name Stroke Animation */
+      @keyframes strokeDraw {
+        0% { stroke-dashoffset: 1200; opacity: 0; }
+        20% { opacity: 1; }
+        80% { stroke-dashoffset: 0; opacity: 1; }
+        100% { stroke-dashoffset: 0; opacity: 0.85; }
+      }
+      .name-stroke {
+        stroke-dasharray: 1200;
+        animation: strokeDraw 7s cubic-bezier(0.16, 1, 0.3, 1) infinite alternate;
+      }
+    </style>
+  </defs>
+
+  <!-- Foundation Background -->
+  <rect width="940" height="480" fill="url(#bgGrad)" />
+  <rect width="940" height="480" fill="url(#centerGlow)" />
+  <rect y="240" width="940" height="240" fill="url(#horizonGlow)" />
+
+  <!-- Perspective Cyber Grid Ground -->
+  <g class="grid-lines" stroke="#00f0ff" stroke-width="0.75" opacity="0.25">
+    <!-- Horizontal Perspective Lines -->
+    <line x1="0" y1="280" x2="940" y2="280" />
+    <line x1="0" y1="310" x2="940" y2="310" stroke-width="0.85" />
+    <line x1="0" y1="350" x2="940" y2="350" stroke-width="1.0" />
+    <line x1="0" y1="400" x2="940" y2="400" stroke-width="1.2" />
+    <line x1="0" y1="460" x2="940" y2="460" stroke-width="1.5" />
+
+    <!-- Perspective Rays Converging to (470, 250) -->
+    <line x1="470" y1="250" x2="-200" y2="480" />
+    <line x1="470" y1="250" x2="0" y2="480" />
+    <line x1="470" y1="250" x2="160" y2="480" />
+    <line x1="470" y1="250" x2="300" y2="480" />
+    <line x1="470" y1="250" x2="400" y2="480" />
+    <line x1="470" y1="250" x2="470" y2="480" />
+    <line x1="470" y1="250" x2="540" y2="480" />
+    <line x1="470" y1="250" x2="640" y2="480" />
+    <line x1="470" y1="250" x2="780" y2="480" />
+    <line x1="470" y1="250" x2="940" y2="480" />
+    <line x1="470" y1="250" x2="1140" y2="480" />
+  </g>
+
+  <!-- Horizon Energy Seam -->
+  <line x1="0" y1="250" x2="940" y2="250" stroke="url(#lineShimmer)" stroke-width="1.5" />
+  <circle cx="470" cy="250" r="3" fill="#00f0ff" opacity="0.9" />
+
+  <!-- Scanning Laser Beam -->
+  <g class="scanner-beam">
+    <rect x="0" y="0" width="940" height="2" fill="#00f0ff" opacity="0.9" />
+    <rect x="0" y="-18" width="940" height="36" fill="url(#scannerGrad)" />
+  </g>
+
+  <!-- Floating Cyber Particles -->
+  <g>
+    <circle class="pt1" cx="120" cy="180" r="2.0" fill="#00f0ff" />
+    <circle class="pt2" cx="240" cy="110" r="1.5" fill="#38bdf8" />
+    <circle class="pt3" cx="360" cy="190" r="2.5" fill="#ffffff" />
+    <circle class="pt1" cx="480" cy="90"  r="1.8" fill="#00f0ff" />
+    <circle class="pt2" cx="620" cy="170" r="2.0" fill="#7dd3fc" />
+    <circle class="pt3" cx="740" cy="120" r="1.5" fill="#ffffff" />
+    <circle class="pt1" cx="840" cy="200" r="2.2" fill="#00f0ff" />
+    <circle class="pt2" cx="180" cy="330" r="1.5" fill="#38bdf8" />
+    <circle class="pt3" cx="780" cy="360" r="2.0" fill="#00f0ff" />
+    <circle class="pt1" cx="530" cy="380" r="1.8" fill="#ffffff" />
+  </g>
+
+  <!-- Outer HUD Precision Frame -->
+  <rect x="18" y="18" width="904" height="444" fill="none" stroke="#1e293b" stroke-width="1" rx="4" />
+  <rect x="24" y="24" width="892" height="432" fill="none" stroke="#00f0ff" stroke-width="0.5" stroke-dasharray="12 8" opacity="0.3" />
+
+  <!-- Precision Corner Brackets -->
+  <path d="M 14 38 L 14 14 L 38 14" fill="none" stroke="#00f0ff" stroke-width="2.5" />
+  <path d="M 902 14 L 926 14 L 926 38" fill="none" stroke="#00f0ff" stroke-width="2.5" />
+  <path d="M 14 442 L 14 466 L 38 466" fill="none" stroke="#00f0ff" stroke-width="2.5" />
+  <path d="M 902 466 L 926 466 L 926 442" fill="none" stroke="#00f0ff" stroke-width="2.5" />
+
+  <!-- Top Telemetry Header Bar -->
+  <g transform="translate(38, 48)">
+    <!-- Live Status Indicator -->
+    <circle class="blink" cx="6" cy="6" r="4.5" fill="#10b981" />
+    <circle cx="6" cy="6" r="8" fill="none" stroke="#10b981" stroke-width="0.8" opacity="0.5" />
+    <text x="22" y="10" class="mono" font-size="10" font-weight="700" fill="#10b981" letter-spacing="1.5">SYSTEM.ONLINE</text>
+
+    <!-- Node Telemetry -->
+    <text x="145" y="10" class="mono" font-size="10" fill="#64748b" letter-spacing="1">//</text>
+    <text x="165" y="10" class="mono" font-size="10" fill="#94a3b8" letter-spacing="1.5">ID: <tspan fill="#00f0ff" font-weight="700">SHABER-01</tspan></text>
+    
+    <text x="280" y="10" class="mono" font-size="10" fill="#64748b" letter-spacing="1">//</text>
+    <text x="300" y="10" class="mono" font-size="10" fill="#94a3b8" letter-spacing="1.5">LOC: <tspan fill="#f1f5f9">08°10&apos;N // 77°25&apos;E [TAMIL NADU, IN]</tspan></text>
+
+    <text x="590" y="10" class="mono" font-size="10" fill="#64748b" letter-spacing="1">//</text>
+    <text x="610" y="10" class="mono" font-size="10" fill="#38bdf8" letter-spacing="1.5">PUBLIC_REPOS: <tspan fill="#ffffff" font-weight="700">36</tspan></text>
+  </g>
+
+  <!-- Top-Right Radar Widget -->
+  <g transform="translate(820, 38)">
+    <circle cx="45" cy="35" r="28" fill="#070c18" stroke="#1e293b" stroke-width="1" />
+    <circle cx="45" cy="35" r="18" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.3" />
+    <circle cx="45" cy="35" r="8" fill="none" stroke="#00f0ff" stroke-width="0.5" opacity="0.5" />
+    <line x1="45" y1="7" x2="45" y2="63" stroke="#1e293b" stroke-width="0.8" />
+    <line x1="17" y1="35" x2="73" y2="35" stroke="#1e293b" stroke-width="0.8" />
+    <!-- Radar Arm -->
+    <line class="radar-arm" x1="45" y1="35" x2="68" y2="18" stroke="#00f0ff" stroke-width="1.5" stroke-linecap="round" />
+    <circle cx="45" cy="35" r="2" fill="#00f0ff" />
+    <text x="45" y="74" text-anchor="middle" class="mono" font-size="8" fill="#64748b" letter-spacing="1">RADAR.SYNC</text>
+  </g>
+
+  <!-- Equalizer Audio Spectrum Widget (Top Left) -->
+  <g transform="translate(42, 78)">
+    <rect class="eq-b1" x="0"  y="8" width="3" height="14" rx="1.5" fill="#00f0ff" />
+    <rect class="eq-b2" x="6"  y="4" width="3" height="18" rx="1.5" fill="#38bdf8" />
+    <rect class="eq-b3" x="12" y="12" width="3" height="10" rx="1.5" fill="#00f0ff" />
+    <rect class="eq-b4" x="18" y="6" width="3" height="16" rx="1.5" fill="#0070f3" />
+    <rect class="eq-b1" x="24" y="10" width="3" height="12" rx="1.5" fill="#38bdf8" />
+    <rect class="eq-b3" x="30" y="2" width="3" height="20" rx="1.5" fill="#00f0ff" />
+    <text x="42" y="17" class="mono" font-size="9" fill="#64748b" letter-spacing="1">FREQ // 24.8 KHZ</text>
+  </g>
+
+  <!-- CENTERSTAGE HERO CONTENT -->
+  <g transform="translate(470, 155)">
+    <!-- Pre-Title Eyebrow Tag -->
+    <rect x="-170" y="-36" width="340" height="22" rx="3" fill="#0a1020" stroke="#00f0ff" stroke-width="0.8" opacity="0.85" />
+    <text x="0" y="-21" text-anchor="middle" class="mono" font-size="10" font-weight="700" fill="#00f0ff" letter-spacing="3.5">
+      // THE DEVELOPER IDENTITY //
+    </text>
+
+    <!-- Massive Main Typography: SHABER MOHAMAD B -->
+    <!-- Solid Gradient Fill -->
+    <text x="0" y="38" text-anchor="middle" class="sans" font-size="54" font-weight="900" fill="url(#titleGrad)" letter-spacing="3">
+      SHABER MOHAMAD B
+    </text>
+    <!-- Laser Contour Stroke Drawing Animation -->
+    <text x="0" y="38" text-anchor="middle" class="sans name-stroke" font-size="54" font-weight="900" fill="none" stroke="#00f0ff" stroke-width="1.2" letter-spacing="3">
+      SHABER MOHAMAD B
+    </text>
+
+    <!-- Secondary Animated Typewriter Console -->
+    <g transform="translate(0, 72)">
+      <rect x="-310" y="-16" width="620" height="34" rx="4" fill="#050914" stroke="#1e293b" stroke-width="1" />
+      <rect x="-310" y="-16" width="4" height="34" rx="1" fill="#00f0ff" />
+      
+      <!-- Cycling Roles with Opacity/Transform -->
+      <g class="cycle-1">
+        <text x="-285" y="6" class="mono" font-size="13" font-weight="600" fill="#38bdf8" letter-spacing="1.2">
+          &gt; FULL-STACK ARCHITECT // REAL-TIME DISTRIBUTED SYSTEMS
+        </text>
+      </g>
+      <g class="cycle-2">
+        <text x="-285" y="6" class="mono" font-size="13" font-weight="600" fill="#00f0ff" letter-spacing="1.2">
+          &gt; B.TECH ARTIFICIAL INTELLIGENCE &amp; DATA SCIENCE
+        </text>
+      </g>
+      <g class="cycle-3">
+        <text x="-285" y="6" class="mono" font-size="13" font-weight="600" fill="#ffffff" letter-spacing="1.2">
+          &gt; STELLA MARY&apos;S COLLEGE OF ENGINEERING // TAMIL NADU
+        </text>
+      </g>
+      <!-- Blinking Cyan Terminal Cursor -->
+      <rect class="cursor" x="280" y="-5" width="8" height="15" fill="#00f0ff" />
+    </g>
+
+    <!-- Sub-tagline credentials -->
+    <text x="0" y="126" text-anchor="middle" class="sans" font-size="13.5" font-weight="400" fill="#94a3b8" letter-spacing="0.5">
+      Crafting high-concurrency WebSockets, 3D spatial computing &amp; intelligent software systems.
+    </text>
+  </g>
+
+  <!-- Bottom Telemetry Ribbon -->
+  <g transform="translate(38, 435)">
+    <!-- Tech Pillars Badges -->
+    <rect x="0" y="-16" width="168" height="26" rx="3" fill="#0b1224" stroke="#1e293b" stroke-width="0.8" />
+    <text x="84" y="1" text-anchor="middle" class="mono" font-size="9.5" font-weight="600" fill="#38bdf8" letter-spacing="1">REACT • NEXT.JS • TS</text>
+
+    <rect x="176" y="-16" width="168" height="26" rx="3" fill="#0b1224" stroke="#1e293b" stroke-width="0.8" />
+    <text x="260" y="1" text-anchor="middle" class="mono" font-size="9.5" font-weight="600" fill="#00f0ff" letter-spacing="1">NODE • SOCKET.IO • REST</text>
+
+    <rect x="352" y="-16" width="168" height="26" rx="3" fill="#0b1224" stroke="#1e293b" stroke-width="0.8" />
+    <text x="436" y="1" text-anchor="middle" class="mono" font-size="9.5" font-weight="600" fill="#38bdf8" letter-spacing="1">PYTHON • AI/DS • QT</text>
+
+    <rect x="528" y="-16" width="168" height="26" rx="3" fill="#0b1224" stroke="#1e293b" stroke-width="0.8" />
+    <text x="612" y="1" text-anchor="middle" class="mono" font-size="9.5" font-weight="600" fill="#00f0ff" letter-spacing="1">THREE.JS • POSTGRESQL</text>
+
+    <!-- Right Side Status Badge -->
+    <rect x="712" y="-16" width="150" height="26" rx="3" fill="#071b1e" stroke="#00f0ff" stroke-width="0.8" />
+    <circle class="blink" cx="726" cy="-3" r="3" fill="#00f0ff" />
+    <text x="790" y="1" text-anchor="middle" class="mono" font-size="9.5" font-weight="700" fill="#00f0ff" letter-spacing="1">OPEN TO BUILD</text>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p6Bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#050a18" />
+      <stop offset="100%" stop-color="#080e20" />
+    </linearGradient>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+      @keyframes crosshairSpin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .spin-reticle { transform-origin: 48px 65px; animation: crosshairSpin 10s linear infinite; }
+    </style>
+  </defs>
+
+  <rect width="940" height="130" rx="6" fill="url(#p6Bg)" stroke="#1e293b" stroke-width="1" />
+  <rect width="4" height="130" rx="1" fill="#38bdf8" />
+
+  <!-- Left 3D Viewport Target Reticle -->
+  <g transform="translate(48, 65)">
+    <circle cx="0" cy="0" r="22" fill="#081024" stroke="#1e293b" stroke-width="1" />
+    <g class="spin-reticle">
+      <circle cx="0" cy="0" r="16" fill="none" stroke="#00f0ff" stroke-width="1" stroke-dasharray="6 4" opacity="0.8" />
+    </g>
+    <circle cx="0" cy="0" r="3" fill="#38bdf8" />
+    <line x1="-8" y1="0" x2="8" y2="0" stroke="#00f0ff" stroke-width="1" />
+    <line x1="0" y1="-8" x2="0" y2="8" stroke="#00f0ff" stroke-width="1" />
+  </g>
+
+  <!-- Project Brief -->
+  <g transform="translate(98, 30)">
+    <text class="mono" font-size="9" font-weight="700" fill="#38bdf8" letter-spacing="1.5">PROJECT 06 // INTERACTIVE 3D ENVIRONMENT</text>
+    <text y="22" class="sans" font-size="18" font-weight="800" fill="#ffffff">Oggy 3D Interactive World</text>
+    <text y="42" class="sans" font-size="11.5" fill="#94a3b8">
+      Interactive 3D web exploration environment of the iconic Oggy house model with WebGL shaders, camera controls &amp; lighting.
+    </text>
+    <text y="64" class="mono" font-size="10" font-weight="600" fill="#00f0ff">
+      JavaScript &#8226; Three.js &#8226; WebGL &#8226; OrbitControls &#8226; HTML5/CSS3
+    </text>
+  </g>
+
+  <!-- Right Visual Status Pill -->
+  <g transform="translate(720, 48)">
+    <rect width="180" height="34" rx="4" fill="#060e22" stroke="#38bdf8" stroke-width="0.8" />
+    <text x="90" y="21" text-anchor="middle" class="mono" font-size="10" font-weight="700" fill="#38bdf8" letter-spacing="1">
+      3D WEBGL &#8226; LIVE
+    </text>
+  </g>
+</svg>

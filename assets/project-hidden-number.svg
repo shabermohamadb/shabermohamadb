@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p3Bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#050a18" />
+      <stop offset="100%" stop-color="#080e20" />
+    </linearGradient>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+      @keyframes spinCube {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      .spin-wireframe { transform-origin: 48px 65px; animation: spinCube 14s linear infinite; }
+      @keyframes numberFlicker {
+        0%, 100% { opacity: 0.8; }
+        50% { opacity: 0.2; }
+      }
+      .num-veil { animation: numberFlicker 2.5s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect width="940" height="130" rx="6" fill="url(#p3Bg)" stroke="#1e293b" stroke-width="1" />
+  <rect width="4" height="130" rx="1" fill="#00f0ff" />
+
+  <!-- Left 3D Isometric Wireframe Graphic -->
+  <g transform="translate(48, 65)">
+    <g class="spin-wireframe">
+      <polygon points="0,-20 18,-10 18,12 0,22 -18,12 -18,-10" fill="none" stroke="#00f0ff" stroke-width="1.2" opacity="0.8" />
+      <line x1="0" y1="2" x2="0" y2="22" stroke="#38bdf8" stroke-width="1" />
+      <line x1="0" y1="2" x2="18" y2="-10" stroke="#38bdf8" stroke-width="1" />
+      <line x1="0" y1="2" x2="-18" y2="-10" stroke="#38bdf8" stroke-width="1" />
+    </g>
+    <text class="mono num-veil" text-anchor="middle" y="4" font-size="10" font-weight="900" fill="#ffffff">?</text>
+  </g>
+
+  <!-- Project Brief -->
+  <g transform="translate(98, 30)">
+    <text class="mono" font-size="9" font-weight="700" fill="#00f0ff" letter-spacing="1.5">PROJECT 03 // SPATIAL COMPUTING &amp; MULTIPLAYER</text>
+    <text y="22" class="sans" font-size="18" font-weight="800" fill="#ffffff">Hidden Number 3D Deduction</text>
+    <text y="42" class="sans" font-size="11.5" fill="#94a3b8">
+      Multiplayer social deduction party game built with Three.js 3D spatial depth &amp; server-verified cryptographic number veils.
+    </text>
+    <text y="64" class="mono" font-size="10" font-weight="600" fill="#38bdf8">
+      TypeScript &#8226; React &#8226; Three.js (WebGL) &#8226; Socket.IO &#8226; Tailwind CSS
+    </text>
+  </g>
+
+  <!-- Right Visual Status Pill -->
+  <g transform="translate(720, 48)">
+    <rect width="180" height="34" rx="4" fill="#060e22" stroke="#00f0ff" stroke-width="0.8" />
+    <text x="90" y="21" text-anchor="middle" class="mono" font-size="10" font-weight="700" fill="#00f0ff" letter-spacing="1">
+      3D WEBGL &#8226; LIVE
+    </text>
+  </g>
+</svg>

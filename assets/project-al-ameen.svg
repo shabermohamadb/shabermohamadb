@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 130" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p4Bg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#050a18" />
+      <stop offset="100%" stop-color="#080e20" />
+    </linearGradient>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+      @keyframes docLaser {
+        0%, 100% { transform: translateY(0); opacity: 0.3; }
+        50% { transform: translateY(24px); opacity: 1; }
+      }
+      .doc-scan { animation: docLaser 2s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect width="940" height="130" rx="6" fill="url(#p4Bg)" stroke="#1e293b" stroke-width="1" />
+  <rect width="4" height="130" rx="1" fill="#38bdf8" />
+
+  <!-- Left Document Synthesis Visual -->
+  <g transform="translate(36, 45)">
+    <rect width="24" height="32" rx="2" fill="#0a152e" stroke="#00f0ff" stroke-width="1.2" />
+    <line x1="4" y1="8"  x2="16" y2="8"  stroke="#38bdf8" stroke-width="1" />
+    <line x1="4" y1="14" x2="20" y2="14" stroke="#38bdf8" stroke-width="1" />
+    <line x1="4" y1="20" x2="14" y2="20" stroke="#38bdf8" stroke-width="1" />
+    <!-- Laser Scan Line -->
+    <line class="doc-scan" x1="0" y1="4" x2="24" y2="4" stroke="#00f0ff" stroke-width="1.5" />
+  </g>
+
+  <!-- Project Brief -->
+  <g transform="translate(98, 30)">
+    <text class="mono" font-size="9" font-weight="700" fill="#38bdf8" letter-spacing="1.5">PROJECT 04 // ENTERPRISE AUTOMATION &amp; PDF PIPELINE</text>
+    <text y="22" class="sans" font-size="18" font-weight="800" fill="#ffffff">Al-Ameen Automation Portal</text>
+    <text y="42" class="sans" font-size="11.5" fill="#94a3b8">
+      Full-stack enterprise management system with automated document synthesis, real-time sync &amp; multi-tenant cloud storage.
+    </text>
+    <text y="64" class="mono" font-size="10" font-weight="600" fill="#00f0ff">
+      Next.js &#8226; Supabase &#8226; SQLite &#8226; jsPDF &#8226; Tailwind CSS &#8226; TypeScript
+    </text>
+  </g>
+
+  <!-- Right Visual Status Pill -->
+  <g transform="translate(720, 48)">
+    <rect width="180" height="34" rx="4" fill="#060e22" stroke="#38bdf8" stroke-width="0.8" />
+    <text x="90" y="21" text-anchor="middle" class="mono" font-size="10" font-weight="700" fill="#38bdf8" letter-spacing="1">
+      ENTERPRISE FLOW
+    </text>
+  </g>
+</svg>

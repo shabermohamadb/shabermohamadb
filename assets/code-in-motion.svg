@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cmBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#03050a" />
+      <stop offset="50%" stop-color="#060b17" />
+      <stop offset="100%" stop-color="#020306" />
+    </linearGradient>
+
+    <linearGradient id="pipelineLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0070f3" />
+    </linearGradient>
+
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; }
+
+      /* Packet Flows Across Architecture Stages */
+      @keyframes forwardPacket1 {
+        0% { cx: 120px; opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { cx: 820px; opacity: 0; }
+      }
+      @keyframes forwardPacket2 {
+        0% { cx: 120px; opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { cx: 820px; opacity: 0; }
+      }
+      .f-pkt1 { animation: forwardPacket1 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+      .f-pkt2 { animation: forwardPacket2 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite 1.6s; }
+
+      /* Return Response Packet */
+      @keyframes returnPacket {
+        0% { cx: 820px; opacity: 0; }
+        15% { opacity: 1; }
+        85% { opacity: 1; }
+        100% { cx: 120px; opacity: 0; }
+      }
+      .r-pkt { animation: returnPacket 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite 0.8s; }
+
+      /* Node Pulse Rings */
+      @keyframes ringPulseMotion {
+        0% { r: 24px; opacity: 0.9; }
+        100% { r: 40px; opacity: 0; }
+      }
+      .motion-ring { animation: ringPulseMotion 2.4s cubic-bezier(0.2, 0.8, 0.2, 1) infinite; }
+
+      /* Code Matrix Stream */
+      @keyframes hexFlow {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-30px); }
+      }
+      .hex-stream { animation: hexFlow 4s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Foundation -->
+  <rect width="940" height="340" rx="8" fill="url(#cmBg)" stroke="#1e293b" stroke-width="1.2" />
+
+  <!-- Section Header -->
+  <g transform="translate(36, 36)">
+    <text class="mono" font-size="10" font-weight="700" fill="#00f0ff" letter-spacing="2.5">SECTION 06 // CODE IN MOTION</text>
+    <text class="sans" y="24" font-size="20" font-weight="800" fill="#ffffff" letter-spacing="0.5">FULL-STACK DISTRIBUTED ARCHITECTURE PIPELINE</text>
+  </g>
+
+  <!-- High-Speed Data Bus Highway Line -->
+  <line x1="120" y1="180" x2="820" y2="180" stroke="url(#pipelineLine)" stroke-width="2.5" opacity="0.6" />
+  <line x1="120" y1="180" x2="820" y2="180" stroke="#00f0ff" stroke-width="1" stroke-dasharray="8 8" opacity="0.8" />
+
+  <!-- Secondary Return Bus Line -->
+  <line x1="120" y1="210" x2="820" y2="210" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4 6" opacity="0.4" />
+
+  <!-- Animated Flying Data Packets -->
+  <circle class="f-pkt1" cy="180" r="4.5" fill="#00f0ff" />
+  <circle class="f-pkt2" cy="180" r="4.5" fill="#ffffff" />
+  <circle class="r-pkt"  cy="210" r="3.5" fill="#38bdf8" />
+
+  <!-- ================= STAGE 1: CLIENT RUNTIME (x=120) ================= -->
+  <g transform="translate(120, 180)">
+    <circle class="motion-ring" cx="0" cy="0" fill="none" stroke="#00f0ff" stroke-width="1.2" />
+    <circle cx="0" cy="0" r="26" fill="#081126" stroke="#00f0ff" stroke-width="1.8" />
+    <text text-anchor="middle" y="-2" class="mono" font-size="8.5" font-weight="800" fill="#00f0ff">STAGE 01</text>
+    <text text-anchor="middle" y="10" class="sans" font-size="9" font-weight="800" fill="#ffffff">CLIENT</text>
+    <text text-anchor="middle" y="44" class="sans" font-size="11" font-weight="700" fill="#ffffff">Client Interface</text>
+    <text text-anchor="middle" y="58" class="mono" font-size="8.5" fill="#94a3b8">React &#8226; WebGL &#8226; Three.js</text>
+  </g>
+
+  <!-- ================= STAGE 2: EDGE GATEWAY (x=295) ================= -->
+  <g transform="translate(295, 180)">
+    <circle cx="0" cy="0" r="26" fill="#081126" stroke="#38bdf8" stroke-width="1.8" />
+    <text text-anchor="middle" y="-2" class="mono" font-size="8.5" font-weight="800" fill="#38bdf8">STAGE 02</text>
+    <text text-anchor="middle" y="10" class="sans" font-size="9" font-weight="800" fill="#ffffff">GATEWAY</text>
+    <text text-anchor="middle" y="44" class="sans" font-size="11" font-weight="700" fill="#ffffff">Edge Security</text>
+    <text text-anchor="middle" y="58" class="mono" font-size="8.5" fill="#94a3b8">JWT &#8226; Proxy &#8226; Route Demux</text>
+  </g>
+
+  <!-- ================= STAGE 3: WEBSOCKET BROKER (x=470) ================= -->
+  <g transform="translate(470, 180)">
+    <circle class="motion-ring" cx="0" cy="0" fill="none" stroke="#00f0ff" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="30" fill="#0c1836" stroke="#00f0ff" stroke-width="2" />
+    <text text-anchor="middle" y="-4" class="mono" font-size="8.5" font-weight="800" fill="#00f0ff">STAGE 03</text>
+    <text text-anchor="middle" y="8" class="sans" font-size="9.5" font-weight="800" fill="#ffffff">SOCKET.IO</text>
+    <text text-anchor="middle" y="20" class="mono" font-size="7" fill="#38bdf8">DUPLEX HUB</text>
+    <text text-anchor="middle" y="48" class="sans" font-size="11" font-weight="700" fill="#ffffff">Real-Time Core</text>
+    <text text-anchor="middle" y="62" class="mono" font-size="8.5" fill="#94a3b8">Bi-directional Streams</text>
+  </g>
+
+  <!-- ================= STAGE 4: WORKER RUNTIME (x=645) ================= -->
+  <g transform="translate(645, 180)">
+    <circle cx="0" cy="0" r="26" fill="#081126" stroke="#38bdf8" stroke-width="1.8" />
+    <text text-anchor="middle" y="-2" class="mono" font-size="8.5" font-weight="800" fill="#38bdf8">STAGE 04</text>
+    <text text-anchor="middle" y="10" class="sans" font-size="9" font-weight="800" fill="#ffffff">WORKER</text>
+    <text text-anchor="middle" y="44" class="sans" font-size="11" font-weight="700" fill="#ffffff">Execution Engine</text>
+    <text text-anchor="middle" y="58" class="mono" font-size="8.5" fill="#94a3b8">Node.js &#8226; Python AI &#8226; Qt</text>
+  </g>
+
+  <!-- ================= STAGE 5: PERSISTENCE & AI (x=820) ================= -->
+  <g transform="translate(820, 180)">
+    <circle class="motion-ring" cx="0" cy="0" fill="none" stroke="#00f0ff" stroke-width="1.2" />
+    <circle cx="0" cy="0" r="26" fill="#081126" stroke="#00f0ff" stroke-width="1.8" />
+    <text text-anchor="middle" y="-2" class="mono" font-size="8.5" font-weight="800" fill="#00f0ff">STAGE 05</text>
+    <text text-anchor="middle" y="10" class="sans" font-size="9" font-weight="800" fill="#ffffff">MEMORY</text>
+    <text text-anchor="middle" y="44" class="sans" font-size="11" font-weight="700" fill="#ffffff">Persistence Cloud</text>
+    <text text-anchor="middle" y="58" class="mono" font-size="8.5" fill="#94a3b8">PostgreSQL &#8226; Supabase</text>
+  </g>
+
+  <!-- Bottom Telemetry HUD Line -->
+  <g transform="translate(36, 308)">
+    <text class="mono" font-size="9" fill="#64748b" letter-spacing="1">
+      STREAM: <tspan fill="#00f0ff" font-weight="700">1.2 GB/S</tspan> &#160;&#8226;&#160;
+      PROTOCOL: <tspan fill="#38bdf8" font-weight="700">HTTP/3 QUIC + WSS</tspan> &#160;&#8226;&#160;
+      LATENCY: <tspan fill="#10b981" font-weight="700">&lt;15MS</tspan> &#160;&#8226;&#160;
+      AI SYNTHESIS: <tspan fill="#00f0ff" font-weight="700">ACTIVE</tspan>
+    </text>
+  </g>
+</svg>

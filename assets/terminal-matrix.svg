@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050812" />
+      <stop offset="100%" stop-color="#020307" />
+    </linearGradient>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+      @keyframes blinkTermCursor {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+      .t-cursor { animation: blinkTermCursor 0.75s step-end infinite; }
+      @keyframes codeGlow {
+        0%, 100% { opacity: 0.95; }
+        50% { opacity: 0.7; }
+      }
+      .active-val { animation: codeGlow 3s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Terminal Window Frame -->
+  <rect width="940" height="300" rx="8" fill="url(#termBg)" stroke="#1e293b" stroke-width="1.2" />
+  
+  <!-- Terminal Title Bar -->
+  <rect width="940" height="34" rx="8" fill="#080e1c" />
+  <rect y="26" width="940" height="8" fill="#080e1c" />
+  <line x1="0" y1="34" x2="940" y2="34" stroke="#1e293b" stroke-width="1" />
+
+  <!-- macOS Window Dots (Cyan / Blue / Slate) -->
+  <circle cx="24" cy="17" r="5" fill="#ef4444" opacity="0.8" />
+  <circle cx="40" cy="17" r="5" fill="#f59e0b" opacity="0.8" />
+  <circle cx="56" cy="17" r="5" fill="#10b981" opacity="0.8" />
+
+  <!-- Title Text -->
+  <text x="470" y="21" text-anchor="middle" class="mono" font-size="10.5" fill="#94a3b8" letter-spacing="1">
+    shaber@quantum-node: ~/active-initiatives (git::main)
+  </text>
+
+  <!-- Terminal Console Content -->
+  <g transform="translate(28, 62)">
+    <!-- Command Prompt -->
+    <text class="mono" font-size="12" fill="#00f0ff" font-weight="700">shaber@node:~$</text>
+    <text x="135" class="mono" font-size="12" fill="#ffffff">cat current_initiatives.json --verbose</text>
+
+    <!-- JSON Output -->
+    <g transform="translate(16, 26)">
+      <text y="0" class="mono" font-size="11.5" fill="#64748b">&#123;</text>
+      
+      <text y="20" class="mono" font-size="11.5">
+        <tspan fill="#38bdf8">&quot;status&quot;</tspan><tspan fill="#64748b">: </tspan><tspan fill="#10b981" class="active-val">&quot;ENGINEERING_ACTIVE_SYSTEMS&quot;</tspan><tspan fill="#64748b">,</tspan>
+      </text>
+
+      <text y="40" class="mono" font-size="11.5">
+        <tspan fill="#38bdf8">&quot;flagship_production&quot;</tspan><tspan fill="#64748b">: </tspan><tspan fill="#f1f5f9">&quot;Floz Commercial Food Engine &amp; Dispatch Ecosystem&quot;</tspan><tspan fill="#64748b">,</tspan>
+      </text>
+
+      <text y="60" class="mono" font-size="11.5">
+        <tspan fill="#38bdf8">&quot;realtime_concurrency&quot;</tspan><tspan fill="#64748b">: </tspan><tspan fill="#f1f5f9">&quot;CollabSpace Socket.IO multi-user platform with @AI agents&quot;</tspan><tspan fill="#64748b">,</tspan>
+      </text>
+
+      <text y="80" class="mono" font-size="11.5">
+        <tspan fill="#38bdf8">&quot;spatial_computing&quot;</tspan><tspan fill="#64748b">: </tspan><tspan fill="#f1f5f9">&quot;Hidden Number 3D WebGL deduction &amp; Oggy 3D spatial world&quot;</tspan><tspan fill="#64748b">,</tspan>
+      </text>
+
+      <text y="100" class="mono" font-size="11.5">
+        <tspan fill="#38bdf8">&quot;system_eda&quot;</tspan><tspan fill="#64748b">: </tspan><tspan fill="#f1f5f9">&quot;CircuitX AI-Driven PCB routing algorithms in PySide6 &amp; NumPy&quot;</tspan><tspan fill="#64748b">,</tspan>
+      </text>
+
+      <text y="120" class="mono" font-size="11.5">
+        <tspan fill="#38bdf8">&quot;education&quot;</tspan><tspan fill="#64748b">: </tspan><tspan fill="#00f0ff">&quot;B.Tech AI &amp; DS @ Stella Mary&apos;s College of Engineering&quot;</tspan><tspan fill="#64748b">,</tspan>
+      </text>
+
+      <text y="140" class="mono" font-size="11.5">
+        <tspan fill="#38bdf8">&quot;open_to&quot;</tspan><tspan fill="#64748b">: </tspan><tspan fill="#ffffff" font-weight="700">&quot;Software Engineer Roles &amp; High-Impact AI/Full-Stack Teams&quot;</tspan>
+      </text>
+
+      <text y="160" class="mono" font-size="11.5" fill="#64748b">&#125;</text>
+
+      <!-- Next Prompt with Blinking Cursor -->
+      <g transform="translate(-16, 186)">
+        <text class="mono" font-size="12" fill="#00f0ff" font-weight="700">shaber@node:~$</text>
+        <text x="135" class="mono" font-size="12" fill="#38bdf8">git push origin master --force-with-lease</text>
+        <rect class="t-cursor" x="465" y="-10" width="8" height="14" fill="#00f0ff" />
+      </g>
+    </g>
+  </g>
+</svg>
