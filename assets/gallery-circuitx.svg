@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 160" width="100%" height="100%">
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+
+      @keyframes traceTravel {
+        0% { stroke-dashoffset: 60; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .pcb-trace {
+        stroke-dasharray: 6 4;
+        animation: traceTravel 2s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <rect width="940" height="160" fill="#f7f6f2" rx="4" stroke="#e5e3dc" stroke-width="1" />
+
+  <!-- Left: Schematic Netlist Diagram -->
+  <g transform="translate(24, 20)">
+    <rect width="130" height="120" rx="2" fill="#ffffff" stroke="#e5e3dc" stroke-width="1" />
+    <rect x="40" y="35" width="50" height="50" rx="2" fill="#f0ede4" stroke="#71717a" stroke-width="1" />
+    <text x="65" y="63" text-anchor="middle" class="mono" font-size="8" font-weight="700" fill="#1d4ed8">MCU</text>
+    
+    <line x1="20" y1="45" x2="40" y2="45" stroke="#71717a" stroke-width="1.2" />
+    <line x1="20" y1="60" x2="40" y2="60" stroke="#71717a" stroke-width="1.2" />
+    <line x1="20" y1="75" x2="40" y2="75" stroke="#71717a" stroke-width="1.2" />
+
+    <line class="pcb-trace" x1="90" y1="45" x2="115" y2="45" stroke="#1d4ed8" stroke-width="1.5" />
+    <line class="pcb-trace" x1="90" y1="60" x2="120" y2="60" stroke="#1d4ed8" stroke-width="1.5" />
+    <line class="pcb-trace" x1="90" y1="75" x2="115" y2="75" stroke="#1d4ed8" stroke-width="1.5" />
+
+    <text x="65" y="112" text-anchor="middle" class="mono" font-size="7" fill="#71717a">NETLIST // ROUTING</text>
+  </g>
+
+  <!-- Right: Project Editorial Content -->
+  <g transform="translate(180, 26)">
+    <text class="mono" font-size="9.5" font-weight="700" fill="#71717a" letter-spacing="1">PROJECT 04 // SYSTEM SOFTWARE &amp; EDA</text>
+    <text y="22" class="sans" font-size="18" font-weight="800" fill="#18181b">CircuitX &#8212; AI-Based PCB Design Software</text>
+    <text y="42" class="sans" font-size="11.5" fill="#71717a">
+      Desktop electronic design automation tool designed to streamline printed circuit board schematic capture, netlist validation, and automated trace routing using NumPy graph heuristics and a PySide6 (Qt6) interface.
+    </text>
+
+    <!-- Technical Badges -->
+    <g transform="translate(0, 68)">
+      <rect x="0" y="0" width="68" height="20" rx="2" fill="#ffffff" stroke="#e5e3dc" stroke-width="1" />
+      <text x="34" y="13" text-anchor="middle" class="mono" font-size="8.5" fill="#18181b">Python</text>
+
+      <rect x="76" y="0" width="105" height="20" rx="2" fill="#ffffff" stroke="#1d4ed8" stroke-width="1" />
+      <text x="128" y="13" text-anchor="middle" class="mono" font-size="8.5" fill="#1d4ed8">PySide6 (Qt6)</text>
+
+      <rect x="189" y="0" width="65" height="20" rx="2" fill="#ffffff" stroke="#e5e3dc" stroke-width="1" />
+      <text x="221" y="13" text-anchor="middle" class="mono" font-size="8.5" fill="#18181b">NumPy</text>
+
+      <rect x="262" y="0" width="60" height="20" rx="2" fill="#ffffff" stroke="#e5e3dc" stroke-width="1" />
+      <text x="292" y="13" text-anchor="middle" class="mono" font-size="8.5" fill="#18181b">Pytest</text>
+    </g>
+
+    <text y="108" class="mono" font-size="9" fill="#18181b">
+      DESKTOP NATIVE // GRAPH HEURISTICS
+    </text>
+  </g>
+</svg>

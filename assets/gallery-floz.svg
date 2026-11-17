@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 180" width="100%" height="100%">
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+
+      @keyframes pulseStep {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; }
+      }
+      .step-active { animation: pulseStep 2s infinite; }
+    </style>
+  </defs>
+
+  <rect width="940" height="180" fill="#f7f6f2" rx="4" stroke="#e5e3dc" stroke-width="1" />
+
+  <!-- Left: Production Commercial Order Receipt -->
+  <g transform="translate(24, 20)">
+    <rect width="280" height="140" rx="3" fill="#ffffff" stroke="#e5e3dc" stroke-width="1" />
+    <rect width="280" height="24" fill="#f0ede4" />
+    <text x="14" y="16" class="mono" font-size="8.5" font-weight="700" fill="#18181b">COMMERCIAL ORDER #1042</text>
+    <text x="266" y="16" class="mono" font-size="8" fill="#71717a" text-anchor="end">LIVE DISPATCH</text>
+
+    <text x="14" y="44" class="sans" font-size="10.5" font-weight="700" fill="#18181b">A-One Shawarma Spot (Nagercoil)</text>
+    <text x="14" y="58" class="mono" font-size="8" fill="#71717a">Production Food Ordering Platform</text>
+
+    <line x1="14" y1="68" x2="266" y2="68" stroke="#e5e3dc" stroke-width="0.8" />
+    <text x="14" y="82" class="mono" font-size="8" fill="#52525b">1x Chicken Shawarma Roll</text>
+    <text x="266" y="82" class="mono" font-size="8" fill="#18181b" text-anchor="end">&#8377;140</text>
+    <text x="14" y="96" class="mono" font-size="8" fill="#52525b">1x Chicken Dum Biryani</text>
+    <text x="266" y="96" class="mono" font-size="8" fill="#18181b" text-anchor="end">&#8377;220</text>
+
+    <line x1="14" y1="106" x2="266" y2="106" stroke="#e5e3dc" stroke-width="0.8" />
+    <text x="14" y="122" class="mono" font-size="8.5" font-weight="700" fill="#18181b">TOTAL VERIFIED</text>
+    <text x="266" y="122" class="mono" font-size="9" font-weight="700" fill="#1d4ed8" text-anchor="end">&#8377;360</text>
+  </g>
+
+  <!-- Right: Project Narrative & Pipeline -->
+  <g transform="translate(330, 24)">
+    <text class="mono" font-size="9.5" font-weight="700" fill="#71717a" letter-spacing="1">PROJECT 02 // FOOD COMMERCE ENGINE</text>
+    <text y="22" class="sans" font-size="18" font-weight="800" fill="#18181b">Floz Food Ordering &amp; Dispatch Engine</text>
+    <text y="42" class="sans" font-size="11.5" fill="#71717a">
+      Commercial food commerce platform built for a physical restaurant in Nagercoil. Features menu browsing, persistent cart hydration, JWT checkout, and administrative order dispatch tracking.
+    </text>
+
+    <!-- Pipeline Step Indicators -->
+    <g transform="translate(0, 68)">
+      <line x1="10" y1="14" x2="380" y2="14" stroke="#e5e3dc" stroke-width="1.5" />
+      
+      <circle cx="10" cy="14" r="6" fill="#18181b" />
+      <text x="10" y="32" class="mono" font-size="8" fill="#71717a">01. ORDER</text>
+
+      <circle cx="130" cy="14" r="6" fill="#18181b" />
+      <text x="130" y="32" class="mono" font-size="8" fill="#71717a">02. KITCHEN</text>
+
+      <circle class="step-active" cx="250" cy="14" r="6" fill="#1d4ed8" />
+      <text x="250" y="32" class="mono" font-size="8" fill="#1d4ed8" font-weight="700">03. DISPATCH</text>
+
+      <circle cx="380" cy="14" r="6" fill="#e5e3dc" />
+      <text x="380" y="32" class="mono" font-size="8" fill="#a1a1aa">04. DELIVERED</text>
+    </g>
+
+    <text y="124" class="mono" font-size="9" fill="#18181b">
+      React &#8226; Vite &#8226; Node.js &#8226; Express &#8226; JWT Authentication &#8226; Tailwind CSS
+    </text>
+  </g>
+</svg>

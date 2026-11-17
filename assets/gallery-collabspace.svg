@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 240" width="100%" height="100%">
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+
+      @keyframes packetConduit {
+        0% { cx: 460px; opacity: 1; }
+        50% { cx: 620px; opacity: 1; }
+        100% { cx: 460px; opacity: 1; }
+      }
+      .pkt-flow { animation: packetConduit 2.6s ease-in-out infinite; }
+
+      @keyframes dotPulse {
+        0%, 100% { opacity: 0.2; }
+        50% { opacity: 1; }
+      }
+      .tp1 { animation: dotPulse 1.2s infinite; }
+      .tp2 { animation: dotPulse 1.2s infinite 0.2s; }
+      .tp3 { animation: dotPulse 1.2s infinite 0.4s; }
+    </style>
+  </defs>
+
+  <rect width="940" height="240" fill="#f7f6f2" rx="4" stroke="#e5e3dc" stroke-width="1" />
+
+  <!-- Left: Authentic Chat Application Workspace Layout -->
+  <g transform="translate(24, 20)">
+    <rect width="360" height="200" rx="4" fill="#ffffff" stroke="#e5e3dc" stroke-width="1" />
+    <rect width="360" height="28" fill="#f0ede4" />
+    <line x1="0" y1="28" x2="360" y2="28" stroke="#e5e3dc" stroke-width="1" />
+    
+    <!-- Window Dots -->
+    <circle cx="14" cy="14" r="3.5" fill="#d5d2c7" />
+    <circle cx="26" cy="14" r="3.5" fill="#d5d2c7" />
+    <circle cx="38" cy="14" r="3.5" fill="#d5d2c7" />
+    <text x="56" y="17" class="mono" font-size="9" font-weight="700" fill="#71717a">collabspace // room: #engineering-sync</text>
+
+    <!-- Channels Column -->
+    <rect x="0" y="28" width="95" height="172" fill="#faf9f6" />
+    <line x1="95" y1="28" x2="95" y2="200" stroke="#e5e3dc" stroke-width="1" />
+    <text x="12" y="46" class="mono" font-size="8" fill="#a1a1aa">ROOMS</text>
+    <text x="12" y="62" class="mono" font-size="8.5" fill="#1d4ed8" font-weight="700"># sync-core</text>
+    <text x="12" y="78" class="mono" font-size="8.5" fill="#71717a"># general</text>
+    <text x="12" y="94" class="mono" font-size="8.5" fill="#71717a"># ai-agent</text>
+
+    <!-- Chat Messages Preview -->
+    <g transform="translate(108, 46)">
+      <circle cx="8" cy="8" r="6" fill="#1d4ed8" />
+      <text x="20" y="7" class="mono" font-size="8" font-weight="700" fill="#18181b">shaber</text>
+      <text x="56" y="7" class="mono" font-size="7" fill="#a1a1aa">14:02</text>
+      <text x="20" y="19" class="sans" font-size="8" fill="#52525b">Deploying Socket.IO cluster to edge</text>
+
+      <g transform="translate(0, 32)">
+        <rect x="18" y="0" width="220" height="34" rx="3" fill="#f7f6f2" stroke="#e5e3dc" stroke-width="0.8" />
+        <circle cx="8" cy="8" r="6" fill="#18181b" />
+        <text x="26" y="10" class="mono" font-size="8" font-weight="700" fill="#1d4ed8">@AI Teammate</text>
+        <text x="86" y="10" class="mono" font-size="7" fill="#a1a1aa">14:02</text>
+        <text x="26" y="22" class="sans" font-size="7.5" fill="#52525b">Room presence synchronized (12ms RTT)</text>
+      </g>
+
+      <g transform="translate(20, 84)">
+        <text class="mono" font-size="7.5" fill="#a1a1aa">active typing</text>
+        <circle class="tp1" cx="64" cy="-2" r="1.5" fill="#1d4ed8" />
+        <circle class="tp2" cx="70" cy="-2" r="1.5" fill="#1d4ed8" />
+        <circle class="tp3" cx="76" cy="-2" r="1.5" fill="#1d4ed8" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Right: Architecture Conduit & Notes -->
+  <g transform="translate(420, 24)">
+    <text class="mono" font-size="9.5" font-weight="700" fill="#71717a" letter-spacing="1">EVENT-DRIVEN REAL-TIME BUS</text>
+    <text y="22" class="sans" font-size="18" font-weight="800" fill="#18181b">CollabSpace &#8212; Real-Time Architecture</text>
+    <text y="42" class="sans" font-size="11.5" fill="#71717a">
+      Engineered for team collaboration with sub-millisecond Socket.IO conduits, nested reply threads, multi-user presence, and contextual AI thread participation.
+    </text>
+
+    <!-- Node Architecture Wireframe -->
+    <g transform="translate(0, 68)">
+      <line x1="50" y1="36" x2="430" y2="36" stroke="#e5e3dc" stroke-width="1.5" />
+      <line x1="50" y1="36" x2="430" y2="36" stroke="#d5d2c7" stroke-width="1" stroke-dasharray="4 4" />
+
+      <!-- Traveling packet -->
+      <circle class="pkt-flow" cy="36" r="4" fill="#1d4ed8" />
+
+      <!-- Node 1: Client -->
+      <g transform="translate(50, 36)">
+        <rect x="-40" y="-22" width="80" height="44" rx="3" fill="#ffffff" stroke="#e5e3dc" stroke-width="1" />
+        <text text-anchor="middle" y="-4" class="mono" font-size="7.5" font-weight="700" fill="#71717a">CLIENT</text>
+        <text text-anchor="middle" y="10" class="sans" font-size="9" font-weight="700" fill="#18181b">React + TS</text>
+      </g>
+
+      <!-- Node 2: Broker -->
+      <g transform="translate(210, 36)">
+        <rect x="-50" y="-24" width="100" height="48" rx="3" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.2" />
+        <text text-anchor="middle" y="-6" class="mono" font-size="7.5" font-weight="700" fill="#1d4ed8">SOCKET BROKER</text>
+        <text text-anchor="middle" y="8" class="sans" font-size="9" font-weight="700" fill="#18181b">Node.js + WS</text>
+      </g>
+
+      <!-- Node 3: AI & DB -->
+      <g transform="translate(370, 36)">
+        <rect x="-40" y="-22" width="80" height="44" rx="3" fill="#ffffff" stroke="#e5e3dc" stroke-width="1" />
+        <text text-anchor="middle" y="-4" class="mono" font-size="7.5" font-weight="700" fill="#71717a">STATE &amp; AI</text>
+        <text text-anchor="middle" y="10" class="sans" font-size="9" font-weight="700" fill="#18181b">PostgreSQL</text>
+      </g>
+    </g>
+
+    <!-- Stack Footnote -->
+    <text y="174" class="mono" font-size="9" fill="#18181b">
+      TypeScript &#8226; React &#8226; Node.js &#8226; Express &#8226; Socket.IO &#8226; Prisma &#8226; Tailwind CSS
+    </text>
+  </g>
+</svg>

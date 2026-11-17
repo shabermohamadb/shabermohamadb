@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 140" width="100%" height="100%">
+  <defs>
+    <style>
+      .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas, monospace; }
+
+      @keyframes drawSigLine {
+        0% { stroke-dashoffset: 600; }
+        100% { stroke-dashoffset: 0; }
+      }
+      .foot-sig {
+        stroke-dasharray: 600;
+        animation: drawSigLine 4s ease-in-out infinite alternate;
+      }
+    </style>
+  </defs>
+
+  <rect width="940" height="140" fill="#f7f6f2" />
+  <line x1="20" y1="20" x2="920" y2="20" stroke="#e5e3dc" stroke-width="1" />
+
+  <g transform="translate(44, 65)">
+    <text class="sans" font-size="28" font-weight="900" fill="#18181b" letter-spacing="-0.5">
+      BUILT WITH CURIOSITY<tspan fill="#1d4ed8">.</tspan>
+    </text>
+    <text y="30" class="mono" font-size="11" font-weight="600" fill="#71717a" letter-spacing="1.5">
+      SHABER MOHAMAD B. &#8226; TAMIL NADU, INDIA &#8226; STELLA MARY&apos;S COLLEGE OF ENGINEERING
+    </text>
+  </g>
+
+  <!-- Kinetic Signature Stroke Flourish -->
+  <path class="foot-sig" d="M 660 75 Q 730 35 800 70 T 890 65" fill="none" stroke="#1d4ed8" stroke-width="2" stroke-linecap="round" />
+</svg>
